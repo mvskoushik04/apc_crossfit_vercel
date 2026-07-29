@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
 import { ArrowRight, ChevronDown, Sparkles, Star, MapPin, Phone, Instagram, Trophy, Users, Award as AwardIcon } from "lucide-react";
 import InstagramEmbed from "@/components/InstagramEmbed";
 import FAQAccordion from "@/components/FAQAccordion";
-import { PROGRAMS, STATS, TESTIMONIALS, FAQS, INSTAGRAM_POSTS, SITE, HERO_IMAGES, CHAMPION_IMAGES } from "@/lib/data";
+import { PROGRAMS, STATS, FAQS, INSTAGRAM_POSTS, SITE, HERO_IMAGES, CHAMPION_IMAGES } from "@/lib/data";
 
 export const metadata = {
     title: "APC CrossFit — Where Discipline meets Luxury | Best Gym in Gajularamaram",
@@ -239,28 +240,10 @@ export default function HomePage() {
                     <div className="text-center max-w-3xl mx-auto mb-14">
                         <Eyebrow center>Voices from the Box</Eyebrow>
                         <h2 className="font-display text-3xl sm:text-4xl lg:text-[42px] leading-[1.1] text-foreground">
-                            Real members. <span className="italic text-gold-gradient">Real transformations.</span>
+                            What our community <span className="italic text-gold-gradient">says.</span>
                         </h2>
                     </div>
-                    <div className="grid md:grid-cols-3 gap-6">
-                        {TESTIMONIALS.map((t) => (
-                            <div key={t.name} className="bg-gradient-card border border-border hover:border-primary/60 transition-smooth flex flex-col rounded-lg p-8">
-                                <div className="flex gap-1 mb-4">
-                                    {[...Array(t.rating)].map((_, j) => <Star key={j} size={14} className="fill-primary text-primary" />)}
-                                </div>
-                                <p className="text-foreground/90 leading-relaxed font-serif italic text-lg">&ldquo;{t.quote}&rdquo;</p>
-                                <div className="mt-auto pt-6 flex items-center gap-3">
-                                    <div className="h-11 w-11 rounded-full bg-primary/15 border border-primary/40 flex items-center justify-center font-serif text-primary font-bold text-lg">
-                                        {t.name.charAt(0)}
-                                    </div>
-                                    <div>
-                                        <div className="font-sans text-sm text-foreground font-semibold">{t.name}</div>
-                                        <div className="text-xs text-muted-foreground">{t.role}</div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+                    <TestimonialCarousel />
                 </div>
             </section>
 
