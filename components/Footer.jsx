@@ -62,6 +62,9 @@ export default function Footer() {
                     <p className="text-xs text-muted-foreground font-sans uppercase tracking-[0.35em]">
                         Forge · Grind · Rise
                     </p>
+                    <p className="text-xs text-muted-foreground font-sans uppercase tracking-[0.35em]">
+                        Developed by AGENTECH DEVELOPERS
+                    </p>
                 </div>
             </div>
         </footer>
