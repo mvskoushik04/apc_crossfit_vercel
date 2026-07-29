@@ -16,24 +16,22 @@ export default function AboutPage() {
     return (
         <>
             {/* HERO */}
-            <section className="relative min-h-[85vh] flex items-center overflow-hidden pt-24">
-                <div className="absolute inset-0">
-                    <Image src={HERO_IMAGES[1]} alt="APC CrossFit training floor" fill priority sizes="100vw" className="object-cover" />
-                    <div className="absolute inset-0 bg-background/75" />
-                    <div className="absolute inset-0 grid-lines opacity-20" />
-                </div>
-                <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center py-24 animate-fade-up">
-                    <div className="inline-flex items-center gap-3 mb-6 justify-center">
-                        <span className="h-px w-10 bg-primary" />
-                        <span className="font-sans uppercase tracking-[0.4em] text-[11px] text-primary font-semibold">About Us</span>
-                        <span className="h-px w-10 bg-primary" />
+            <section className="relative pt-32 pb-20 overflow-hidden border-b border-border">
+                <div className="absolute inset-0 grid-lines opacity-30" />
+                <div className="absolute -top-20 right-0 w-96 h-96 rounded-full bg-primary/10 blur-3xl" />
+                <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div className="max-w-4xl animate-fade-up">
+                        <div className="inline-flex items-center gap-3 mb-6">
+                            <span className="h-px w-10 bg-primary" />
+                            <span className="font-sans uppercase tracking-[0.4em] text-[11px] text-primary font-semibold">About Us</span>
+                        </div>
+                        <h1 className="font-display text-3xl sm:text-4xl lg:text-[44px] leading-[1.1] text-foreground">
+                            The <span className="italic text-gold-gradient">APC</span> Standard.
+                        </h1>
+                        <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed font-light">
+                            A gym born from championship discipline. Built for men, women and the youngest champions of Gajularamaram.
+                        </p>
                     </div>
-                    <h1 className="font-display text-3xl sm:text-4xl lg:text-[44px] leading-[1.1] text-foreground">
-                        The <span className="italic text-gold-gradient">APC</span> Standard.
-                    </h1>
-                    <p className="mt-8 text-lg text-muted-foreground leading-relaxed font-light max-w-2xl mx-auto">
-                        A gym born from championship discipline. Built for men, women and the youngest champions of Gajularamaram.
-                    </p>
                 </div>
             </section>
 
