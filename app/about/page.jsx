@@ -67,8 +67,8 @@ export default function AboutPage() {
                     </div>
 
                     {/* JOURNEY TIMELINE */}
-                    <div className="relative">
-                        <div className="absolute left-1/2 top-0 bottom-0 w-px bg-border/60 transform -translate-x-1/2 hidden md:block" />
+                    <div className="relative mt-20">
+                        <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary/20 via-primary/60 to-primary/20 transform -translate-x-1/2 hidden md:block" />
                         
                         <div className="space-y-12 md:space-y-16">
                             {[
@@ -79,37 +79,22 @@ export default function AboutPage() {
                                 { month: "May 2025", title: "Community Grows", desc: "Women's strength program launches. 75+ members now train at APC.", icon: "🔥" },
                                 { month: "June 2025", title: "Luxury Facility", desc: "Full CrossFit rig installed. Dedicated cricket net & training area completed.", icon: "✨" },
                             ].map((item, index) => (
-                                <div key={index} className={`flex flex-col md:flex-row items-center gap-6 md:gap-8 relative`}>
-                                    <div className={`flex-1 text-right hidden md:block ${index % 2 === 0 ? '' : 'order-2 text-left'}`}>
-                                        {index % 2 === 0 ? (
-                                            <div className="pr-8">
-                                                <div className="font-display text-2xl text-foreground">{item.title}</div>
-                                                <div className="text-sm text-muted-foreground mt-1">{item.desc}</div>
-                                                <div className="font-sans uppercase tracking-[0.3em] text-[10px] text-primary mt-2">{item.month}</div>
-                                            </div>
-                                        ) : null}
+                                <div key={index} className={`flex flex-col md:flex-row items-center gap-4 md:gap-8 relative ${
+                                    index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                                }`}>
+                                    <div className={`flex-1 ${index % 2 === 0 ? 'md:text-right md:pr-12' : 'md:text-left md:pl-12'}`}>
+                                        <div className="bg-card border border-border rounded-lg p-6 hover:border-primary/60 transition-smooth shadow-elevated">
+                                            <div className="font-display text-2xl text-foreground">{item.title}</div>
+                                            <div className="text-sm text-muted-foreground mt-2 leading-relaxed">{item.desc}</div>
+                                            <div className="font-sans uppercase tracking-[0.3em] text-[10px] text-primary mt-3 font-semibold">{item.month}</div>
+                                        </div>
                                     </div>
 
-                                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 border-2 border-primary/30 z-10 flex-shrink-0">
-                                        <span className="text-xl">{item.icon}</span>
+                                    <div className="flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 border-2 border-primary/30 z-10 flex-shrink-0 shadow-gold">
+                                        <span className="text-2xl">{item.icon}</span>
                                     </div>
 
-                                    <div className={`flex-1 text-left hidden md:block ${index % 2 === 0 ? '' : 'order-1 text-right'}`}>
-                                        {index % 2 === 1 ? (
-                                            <div className="pl-8">
-                                                <div className="font-display text-2xl text-foreground">{item.title}</div>
-                                                <div className="text-sm text-muted-foreground mt-1">{item.desc}</div>
-                                                <div className="font-sans uppercase tracking-[0.3em] text-[10px] text-primary mt-2">{item.month}</div>
-                                            </div>
-                                        ) : null}
-                                    </div>
-
-                                    {/* Mobile View */}
-                                    <div className="flex-1 text-center md:hidden">
-                                        <div className="font-display text-xl text-foreground">{item.title}</div>
-                                        <div className="text-sm text-muted-foreground mt-1">{item.desc}</div>
-                                        <div className="font-sans uppercase tracking-[0.3em] text-[10px] text-primary mt-2">{item.month}</div>
-                                    </div>
+                                    <div className="flex-1 hidden md:block" />
                                 </div>
                             ))}
                         </div>
