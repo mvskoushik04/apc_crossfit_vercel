@@ -63,7 +63,15 @@ export default function Footer() {
                         Forge · Grind · Rise
                     </p>
                     <p className="text-xs text-muted-foreground font-sans uppercase tracking-[0.35em]">
-                        Developed by AGENTECH DEVELOPERS
+                        Developed by{" "}
+                        <a 
+                            href="https://agentechdevelopers.vercel.app/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-primary hover:text-primary-glow transition-smooth hover:underline"
+                        >
+                            AGENTECH DEVELOPERS
+                        </a>
                     </p>
                 </div>
             </div>
