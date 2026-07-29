@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Compass, Target, Heart, ArrowRight, Users, Shield, Award, Star } from "lucide-react";
+import { Compass, Target, Heart, ArrowRight, Users, Shield, Award, Star, CheckCircle2 } from "lucide-react";
 import { CORE_PRINCIPLES, HERO_IMAGES, GALLERY_IMAGES, SITE } from "@/lib/data";
 
 export const metadata = {
@@ -35,10 +35,10 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* OUR STORY */}
+            {/* OUR STORY + JOURNEY TIMELINE */}
             <section className="relative py-24 lg:py-32">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20">
                         <div>
                             <div className="inline-flex items-center gap-3 mb-5">
                                 <span className="h-px w-10 bg-primary" />
@@ -65,60 +65,54 @@ export default function AboutPage() {
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
 
-            {/* FOUNDATIONS */}
-            <section className="py-24 lg:py-32 bg-gradient-dark border-y border-border">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-14">
-                        <span className="font-sans uppercase tracking-[0.4em] text-[11px] text-primary font-semibold">Foundations</span>
-                        <h2 className="mt-5 font-display text-3xl sm:text-4xl lg:text-[42px] leading-[1.1] text-foreground">
-                            Vision · Mission · <span className="italic text-gold-gradient">Values</span>
-                        </h2>
-                    </div>
-                    <div className="grid md:grid-cols-3 gap-5">
-                        {[
-                            { icon: Compass, title: "Our Vision", text: "To become North Hyderabad's most respected strength & conditioning destination — producing champions and transforming lives at every age." },
-                            { icon: Target, title: "Our Mission", text: "Deliver world-class coaching in an elegant environment, ensuring every member — from age 12 to 60 — achieves goals they once thought impossible." },
-                            { icon: Heart, title: "Our Values", text: "Discipline. Community. Excellence. Integrity. We do the work when no one is watching, and we celebrate every win, big or small." },
-                        ].map((v) => {
-                            const Ic = v.icon;
-                            return (
-                                <div key={v.title} className="bg-card/50 border border-border hover:border-primary/60 transition-smooth rounded-lg p-8 flex flex-col">
-                                    <Ic size={26} className="text-primary mb-6" strokeWidth={1.5} />
-                                    <h3 className="font-display text-3xl text-foreground">{v.title}</h3>
-                                    <p className="text-muted-foreground mt-4 leading-relaxed font-light">{v.text}</p>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </div>
-            </section>
-
-            {/* CORE PRINCIPLES */}
-            <section className="py-24 lg:py-32">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div className="max-w-3xl mb-14">
-                        <span className="font-sans uppercase tracking-[0.4em] text-[11px] text-primary font-semibold">Core Principles</span>
-                        <h2 className="mt-5 font-display text-3xl sm:text-4xl lg:text-[42px] leading-[1.1] text-foreground">
-                            The four pillars <span className="italic text-gold-gradient">we train on.</span>
-                        </h2>
-                    </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                        {CORE_PRINCIPLES.map((p, i) => {
-                            const Ic = iconMap[p.icon] || Target;
-                            return (
-                                <div key={p.title} className="bg-card border border-border rounded-lg p-6 hover:border-primary/60 transition-smooth">
-                                    <div className="flex items-center justify-between mb-5">
-                                        <Ic size={22} className="text-primary" strokeWidth={1.5} />
-                                        <span className="font-display italic text-2xl text-primary/25">0{i + 1}</span>
+                    {/* JOURNEY TIMELINE */}
+                    <div className="relative">
+                        <div className="absolute left-1/2 top-0 bottom-0 w-px bg-border/60 transform -translate-x-1/2 hidden md:block" />
+                        
+                        <div className="space-y-12 md:space-y-16">
+                            {[
+                                { month: "January 2025", title: "Grand Opening", desc: "APC CrossFit inaugurated by local MLA. Ribbon-cutting ceremony with 50+ attendees.", icon: "🎯" },
+                                { month: "February 2025", title: "First Members Join", desc: "Community grows to 25+ members. First transformation stories begin.", icon: "💪" },
+                                { month: "March 2025", title: "50+ Members", desc: "CrossFit, cricket coaching & strength programs launch. 50+ members milestone achieved.", icon: "🏆" },
+                                { month: "April 2025", title: "State-Level Champions", desc: "First national-level athletes emerge from APC. Youth cricket program expands.", icon: "⭐" },
+                                { month: "May 2025", title: "Community Grows", desc: "Women's strength program launches. 75+ members now train at APC.", icon: "🔥" },
+                                { month: "June 2025", title: "Luxury Facility", desc: "Full CrossFit rig installed. Dedicated cricket net & training area completed.", icon: "✨" },
+                            ].map((item, index) => (
+                                <div key={index} className={`flex flex-col md:flex-row items-center gap-6 md:gap-8 relative`}>
+                                    <div className={`flex-1 text-right hidden md:block ${index % 2 === 0 ? '' : 'order-2 text-left'}`}>
+                                        {index % 2 === 0 ? (
+                                            <div className="pr-8">
+                                                <div className="font-display text-2xl text-foreground">{item.title}</div>
+                                                <div className="text-sm text-muted-foreground mt-1">{item.desc}</div>
+                                                <div className="font-sans uppercase tracking-[0.3em] text-[10px] text-primary mt-2">{item.month}</div>
+                                            </div>
+                                        ) : null}
                                     </div>
-                                    <h3 className="font-display text-2xl text-foreground">{p.title}</h3>
-                                    <p className="text-sm text-muted-foreground mt-2 font-light leading-relaxed">{p.desc}</p>
+
+                                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 border-2 border-primary/30 z-10 flex-shrink-0">
+                                        <span className="text-xl">{item.icon}</span>
+                                    </div>
+
+                                    <div className={`flex-1 text-left hidden md:block ${index % 2 === 0 ? '' : 'order-1 text-right'}`}>
+                                        {index % 2 === 1 ? (
+                                            <div className="pl-8">
+                                                <div className="font-display text-2xl text-foreground">{item.title}</div>
+                                                <div className="text-sm text-muted-foreground mt-1">{item.desc}</div>
+                                                <div className="font-sans uppercase tracking-[0.3em] text-[10px] text-primary mt-2">{item.month}</div>
+                                            </div>
+                                        ) : null}
+                                    </div>
+
+                                    {/* Mobile View */}
+                                    <div className="flex-1 text-center md:hidden">
+                                        <div className="font-display text-xl text-foreground">{item.title}</div>
+                                        <div className="text-sm text-muted-foreground mt-1">{item.desc}</div>
+                                        <div className="font-sans uppercase tracking-[0.3em] text-[10px] text-primary mt-2">{item.month}</div>
+                                    </div>
                                 </div>
-                            );
-                        })}
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>
@@ -163,8 +157,36 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* ACHIEVEMENTS */}
+            {/* FOUNDATIONS */}
             <section className="py-24 lg:py-32">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-14">
+                        <span className="font-sans uppercase tracking-[0.4em] text-[11px] text-primary font-semibold">Foundations</span>
+                        <h2 className="mt-5 font-display text-3xl sm:text-4xl lg:text-[42px] leading-[1.1] text-foreground">
+                            Vision · Mission · <span className="italic text-gold-gradient">Values</span>
+                        </h2>
+                    </div>
+                    <div className="grid md:grid-cols-3 gap-5">
+                        {[
+                            { icon: Compass, title: "Our Vision", text: "To become North Hyderabad's most respected strength & conditioning destination — producing champions and transforming lives at every age." },
+                            { icon: Target, title: "Our Mission", text: "Deliver world-class coaching in an elegant environment, ensuring every member — from age 12 to 60 — achieves goals they once thought impossible." },
+                            { icon: Heart, title: "Our Values", text: "Discipline. Community. Excellence. Integrity. We do the work when no one is watching, and we celebrate every win, big or small." },
+                        ].map((v) => {
+                            const Ic = v.icon;
+                            return (
+                                <div key={v.title} className="bg-card/50 border border-border hover:border-primary/60 transition-smooth rounded-lg p-8 flex flex-col">
+                                    <Ic size={26} className="text-primary mb-6" strokeWidth={1.5} />
+                                    <h3 className="font-display text-3xl text-foreground">{v.title}</h3>
+                                    <p className="text-muted-foreground mt-4 leading-relaxed font-light">{v.text}</p>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+            </section>
+
+            {/* ACHIEVEMENTS */}
+            <section className="py-24 lg:py-32 bg-gradient-dark border-y border-border">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                         <div className="relative order-2 lg:order-1">
