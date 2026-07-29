@@ -72,12 +72,12 @@ export default function AboutPage() {
                         
                         <div className="space-y-12 md:space-y-16">
                             {[
-                                { month: "January 2025", title: "Grand Opening", desc: "APC CrossFit inaugurated by local MLA. Ribbon-cutting ceremony with 50+ attendees.", icon: "🎯" },
-                                { month: "February 2025", title: "First Members Join", desc: "Community grows to 25+ members. First transformation stories begin.", icon: "💪" },
-                                { month: "March 2025", title: "50+ Members", desc: "CrossFit, cricket coaching & strength programs launch. 50+ members milestone achieved.", icon: "🏆" },
-                                { month: "April 2025", title: "State-Level Champions", desc: "First national-level athletes emerge from APC. Youth cricket program expands.", icon: "⭐" },
-                                { month: "May 2025", title: "Community Grows", desc: "Women's strength program launches. 75+ members now train at APC.", icon: "🔥" },
-                                { month: "June 2025", title: "Luxury Facility", desc: "Full CrossFit rig installed. Dedicated cricket net & training area completed.", icon: "✨" },
+                                { month: "January 2025", title: "Grand Opening", desc: "APC CrossFit inaugurated by local MLA. Ribbon-cutting ceremony with 50+ attendees.", icon: "" },
+                                { month: "February 2025", title: "First Members Join", desc: "Community grows to 25+ members. First transformation stories begin.", icon: "" },
+                                { month: "March 2025", title: "50+ Members", desc: "CrossFit, cricket coaching & strength programs launch. 50+ members milestone achieved.", icon: "" },
+                                { month: "April 2025", title: "State-Level Champions", desc: "First national-level athletes emerge from APC. Youth cricket program expands.", icon: "" },
+                                { month: "May 2025", title: "Community Grows", desc: "Women's strength program launches. 75+ members now train at APC.", icon: "" },
+                                { month: "June 2025", title: "Luxury Facility", desc: "Full CrossFit rig installed. Dedicated cricket net & training area completed.", icon: "" },
                             ].map((item, index) => (
                                 <div key={index} className={`flex flex-col md:flex-row items-center gap-4 md:gap-8 relative ${
                                     index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
@@ -91,7 +91,7 @@ export default function AboutPage() {
                                     </div>
 
                                     <div className="flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 border-2 border-primary/30 z-10 flex-shrink-0 shadow-gold">
-                                        <span className="text-2xl">{item.icon}</span>
+                                        
                                     </div>
 
                                     <div className="flex-1 hidden md:block" />
