@@ -90,9 +90,7 @@ export default function AboutPage() {
                                         </div>
                                     </div>
 
-                                    <div className="flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 border-2 border-primary/30 z-10 flex-shrink-0 shadow-gold">
-                                        
-                                    </div>
+                                    <div className="flex-1 md:flex-none w-14 hidden md:block" />
 
                                     <div className="flex-1 hidden md:block" />
                                 </div>
