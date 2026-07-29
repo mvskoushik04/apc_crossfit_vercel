@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 0 0% 4%;
+        --foreground: 40 25% 92%;
+        --card: 0 0% 7%;
+        --primary: 42 55% 58%;
+        --primary-foreground: 0 0% 6%;
+        --primary-glow: 42 70% 68%;
+        --accent: 0 78% 48%;
+        --accent-foreground: 0 0% 100%;
+        --muted: 0 0% 12%;
+        --muted-foreground: 40 8% 62%;
+        --border: 40 15% 18%;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+        background: hsl(var(--background));
+        color: hsl(var(--foreground));
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    ::selection {
+        background: hsl(var(--primary));
+        color: hsl(var(--primary-foreground));
+    }
+}
+
+@layer components {
+    .text-gold-gradient {
+        background: linear-gradient(135deg, hsl(42 65% 65%) 0%, hsl(42 80% 78%) 50%, hsl(42 60% 55%) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    .grid-lines {
+        background-image:
+            linear-gradient(hsl(40 25% 92% / 0.025) 1px, transparent 1px),
+            linear-gradient(90deg, hsl(40 25% 92% / 0.025) 1px, transparent 1px);
+        background-size: 60px 60px;
+    }
+
+    .diagonal-stripes {
+        background-image: repeating-linear-gradient(45deg, hsl(42 55% 58% / 0.06) 0px, hsl(42 55% 58% / 0.06) 2px, transparent 2px, transparent 14px);
+    }
+
+    .bg-gradient-hero {
+        background: linear-gradient(135deg, hsl(0 0% 3% / 0.92) 0%, hsl(0 0% 6% / 0.75) 45%, hsl(0 0% 3% / 0.9) 100%);
+    }
+    .bg-gradient-dark {
+        background: linear-gradient(180deg, hsl(0 0% 4%) 0%, hsl(0 0% 6%) 100%);
+    }
+    .bg-gradient-card {
+        background: linear-gradient(145deg, hsl(0 0% 8%) 0%, hsl(0 0% 5%) 100%);
+    }
+
+    .shadow-elevated { box-shadow: 0 25px 50px -12px hsl(0 0% 0% / 0.75); }
+    .shadow-gold { box-shadow: 0 20px 60px -20px hsl(42 55% 50% / 0.35); }
+
+    .transition-smooth { transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1); }
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: hsl(0 0% 3%); }
+::-webkit-scrollbar-thumb { background: hsl(42 45% 45%); border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(42 55% 55%); }
+
+/* Instagram embed dark theme */
+.instagram-media {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    min-width: 100% !important;
+    width: 100% !important;
+}
+
+.instagram-media * {
+    background: transparent !important;
+}
+
+.instagram-media ._a9zc {
+    background: hsl(var(--card)) !important;
+    border-radius: 8px !important;
+}
+
+.instagram-media ._a9zr {
+    background: hsl(var(--card)) !important;
+}
+
+/* Dark theme for Instagram embed iframe */
+.instagram-media iframe {
+    background: hsl(var(--card)) !important;
+    border-radius: 8px !important;
+}

@@ -1,0 +1,149 @@
+import Link from "next/link";
+import Image from "next/image";
+import { ArrowRight, Clock, CheckCircle2, Flame, Dumbbell, Heart, Target, Trophy, User } from "lucide-react";
+import { PROGRAMS, FACILITIES, SITE } from "@/lib/data";
+
+export const metadata = {
+    title: "Programs — CrossFit, Cricket, Weight Loss & Strength Training",
+    description:
+        "Six signature programs at APC CrossFit Gajularamaram: CrossFit training, cricket coaching, athletic power, weight loss, strength training and personal coaching.",
+    alternates: { canonical: `${SITE.url}/programs` },
+};
+
+const programIcons = { crossfit: Flame, strength: Dumbbell, weightloss: Heart, athletic: Target, cricket: Trophy, personal: User };
+
+export default function ProgramsPage() {
+    return (
+        <>
+            {/* HERO */}
+            <section className="relative pt-32 pb-20 overflow-hidden border-b border-border">
+                <div className="absolute inset-0 grid-lines opacity-30" />
+                <div className="absolute -top-20 right-0 w-96 h-96 rounded-full bg-primary/10 blur-3xl" />
+                <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div className="max-w-4xl animate-fade-up">
+                        <div className="inline-flex items-center gap-3 mb-6">
+                            <span className="h-px w-10 bg-primary" />
+                            <span className="font-sans uppercase tracking-[0.4em] text-[11px] text-primary font-semibold">Programs</span>
+                        </div>
+                        <h1 className="font-display text-3xl sm:text-4xl lg:text-[44px] leading-[1.1] text-foreground">
+                            Six paths. <span className="italic text-gold-gradient">One goal.</span>
+                        </h1>
+                        <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed font-light">
+                            Whether you are chasing your first pull-up, your first medal, or your first 6-pack &mdash; we have built a program that meets you where you are.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* DETAILED PROGRAMS */}
+            <section className="py-20">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-24">
+                    {PROGRAMS.map((p, i) => {
+                        const Ic = programIcons[p.id] || Flame;
+                        const reverse = i % 2 === 1;
+                        return (
+                            <div key={p.id} className={`grid lg:grid-cols-2 gap-10 lg:gap-14 items-center`}>
+                                <div className={reverse ? "lg:order-2" : ""}>
+                                    <div className="relative rounded-lg overflow-hidden aspect-[4/5] group shadow-elevated">
+                                        <Image src={p.image} alt={p.title} fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover group-hover:scale-105 transition-smooth" />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                                        <div className="absolute top-5 left-5 h-14 w-14 rounded bg-primary flex items-center justify-center shadow-gold">
+                                            <Ic size={24} className="text-primary-foreground" />
+                                        </div>
+                                        <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between">
+                                            <div className="flex items-center gap-2 px-3 py-1.5 rounded bg-background/70 backdrop-blur border border-border">
+                                                <Clock size={12} className="text-primary" />
+                                                <span className="font-sans uppercase tracking-[0.3em] text-[10px]">{p.duration}</span>
+                                            </div>
+                                            <div className="px-3 py-1.5 rounded bg-background/70 backdrop-blur border border-border">
+                                                <span className="font-sans uppercase tracking-[0.3em] text-[10px]">{p.level}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className={reverse ? "lg:order-1" : ""}>
+                                    <div className="font-sans uppercase tracking-[0.3em] text-[11px] text-primary mb-3 font-semibold">{p.subtitle}</div>
+                                    <h2 className="font-display text-3xl sm:text-4xl lg:text-[42px] leading-[1.1] text-foreground">{p.title}</h2>
+                                    <p className="mt-5 text-lg text-muted-foreground leading-relaxed font-light">{p.description}</p>
+                                    <div className="mt-8 grid sm:grid-cols-2 gap-3">
+                                        {p.highlights.map((h) => (
+                                            <div key={h} className="flex items-center gap-2 bg-card border border-border rounded p-3">
+                                                <CheckCircle2 size={16} className="text-primary shrink-0" />
+                                                <span className="text-sm text-foreground">{h}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                    <div className="mt-8 flex flex-wrap gap-3">
+                                        <Link href="/contact" className="inline-flex items-center gap-2 rounded-md bg-accent hover:bg-accent/90 text-accent-foreground font-sans uppercase tracking-[0.3em] text-xs px-6 h-12 font-bold">
+                                            Book Trial <ArrowRight size={14} />
+                                        </Link>
+                                        <Link href="/contact" className="inline-flex items-center rounded-md border border-primary/40 hover:border-primary hover:bg-primary/10 font-sans uppercase tracking-[0.3em] text-xs px-6 h-12 text-foreground">
+                                            Ask a Coach
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+            </section>
+
+            {/* FACILITIES */}
+            <section className="py-24 bg-gradient-dark border-y border-border">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div className="max-w-3xl mb-14">
+                        <span className="font-sans uppercase tracking-[0.4em] text-[11px] text-primary font-semibold">Facilities</span>
+                        <h2 className="mt-5 font-display text-3xl sm:text-4xl lg:text-[42px] leading-[1.1] text-foreground">
+                            Everything you need. <span className="italic text-gold-gradient">Nothing you don&apos;t.</span>
+                        </h2>
+                    </div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        {FACILITIES.map((f, i) => (
+                            <div key={i} className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-smooth flex items-start gap-4">
+                                <div className="h-10 w-10 rounded bg-primary/10 border border-primary/30 flex items-center justify-center shrink-0">
+                                    <span className="font-display text-lg text-primary">{String(i + 1).padStart(2, "0")}</span>
+                                </div>
+                                <p className="text-foreground/90 leading-relaxed">{f}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* BUILT FOR EVERY BODY */}
+            <section className="py-24 lg:py-32">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div className="text-center max-w-4xl mx-auto mb-14">
+                        <div className="inline-flex items-center gap-3 mb-5 justify-center">
+                            <span className="font-sans uppercase tracking-[0.4em] text-[11px] text-primary font-semibold">Who Trains at APC</span>
+                        </div>
+                        <h2 className="font-display text-3xl sm:text-4xl lg:text-[42px] leading-[1.1] text-foreground">
+                            Built for <span className="italic text-gold-gradient">every</span> body.
+                        </h2>
+                        <p className="mt-6 text-lg text-muted-foreground leading-relaxed font-light">
+                            Men, women and young athletes &mdash; all welcome, all coached to championship standards.
+                        </p>
+                    </div>
+                    <div className="grid md:grid-cols-3 gap-5">
+                        {[
+                            { title: "Women", text: "A safe, empowering strength environment. Ladies-first coaching wherever preferred.", image: "/images/group-women.jpg" },
+                            { title: "Men", text: "From body-recomp to competitive strength &mdash; personalised pathways for every stage.", image: "/images/group-men.jpg" },
+                            { title: "Youth (below 15)", text: "Age-appropriate cricket, athletic and strength foundations &mdash; the champions of tomorrow.", image: "/images/group-youth.jpg" },
+                        ].map((g) => (
+                            <div key={g.title} className="group relative rounded-lg overflow-hidden bg-card border border-border hover:border-primary/60 transition-smooth">
+                                <div className="relative aspect-[4/5] overflow-hidden">
+                                    <Image src={g.image} alt={`Training for ${g.title}`} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover group-hover:scale-105 transition-smooth" />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+                                    <div className="absolute bottom-6 left-6 right-6">
+                                        <h3 className="font-display text-4xl text-foreground">{g.title}</h3>
+                                        <p className="mt-3 text-sm sm:text-base text-muted-foreground leading-relaxed font-light" dangerouslySetInnerHTML={{ __html: g.text }} />
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+        </>
+    );
+}
