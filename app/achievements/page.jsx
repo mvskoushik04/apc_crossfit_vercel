@@ -100,10 +100,7 @@ export default function AchievementsPage() {
                                     <p className="text-muted-foreground leading-relaxed font-light text-sm">
                                         {achievement.description}
                                     </p>
-                                    <div className="mt-4 flex items-center gap-2 text-xs text-primary font-sans uppercase tracking-[0.3em]">
-                                        <span>Read more</span>
-                                        <ChevronRight size={14} className="group-hover:translate-x-1 transition-smooth" />
-                                    </div>
+                                    
                                 </div>
                             </div>
                         ))}
