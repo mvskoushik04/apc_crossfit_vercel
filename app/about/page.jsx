@@ -82,8 +82,8 @@ export default function AboutPage() {
                     </div>
                     <div className="grid md:grid-cols-2 gap-6">
                         {[
-                            { name: "Head Mentor", role: "State-Level Cricket Champion · Founder", bio: "A former state-level cricketer who brings the discipline of championship-grade training to every APC athlete. Passionate about building young talent and adult transformation alike.", image: "/images/mentor-1.jpg", stats: ["State Champion · Cricket", "L2 Certified Coach", "12+ years mentoring"] },
-                            { name: "Co-Mentor", role: "State-Level Cricket Champion · Athletic Coach", bio: "A decorated state cricket veteran who now leads our cricket coaching and athletic development pathway — the same pathway that has produced our national-level athletes.", image: "/images/mentor-2.jpg", stats: ["State Captain · Cricket", "Sport Science Cert.", "Youth Athlete Mentor"] },
+                            { name: "A Premchand", role: "State-Level Cricket Champion · Founder", bio: "A former state-level cricketer who brings the discipline of championship-grade training to every APC athlete. Passionate about building young talent and adult transformation alike.", image: "/images/mentor-1.jpg", stats: ["State Champion · Cricket", "Certified Coach", "10+ years mentoring"] },
+                            { name: "A Premcharan", role: "State-Level Cricket Champion · Co-Founder", bio: "A decorated state cricket veteran who now leads our cricket coaching and athletic development pathway — the same pathway that has produced our national-level athletes.", image: "/images/mentor-2.jpg", stats: ["Youth Athlete Mentor", "Muscle building Coach", "3+ years mentoring"] },
                         ].map((m) => (
                             <div key={m.name} className="group relative rounded-lg overflow-hidden bg-card border border-border hover:border-primary/60 transition-smooth flex flex-col">
                                 <div className="relative aspect-[16/10] overflow-hidden">
