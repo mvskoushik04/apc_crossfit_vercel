@@ -52,12 +52,11 @@ export default function HomePage() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-2">
-                            <Link href="/contact" className="inline-flex items-center justify-center gap-2 rounded-md bg-accent hover:bg-accent/90 text-accent-foreground font-sans uppercase tracking-[0.3em] text-xs px-8 h-13 py-3.5 font-bold transition-smooth group">
-                                Book a Free Trial
-                                <ArrowRight className="group-hover:translate-x-1 transition-smooth" size={15} />
-                            </Link>
                             <Link href="/programs" className="inline-flex items-center justify-center rounded-md border border-primary/40 hover:border-primary hover:bg-primary/10 font-sans uppercase tracking-[0.3em] text-xs px-8 h-13 py-3.5 bg-background/40 backdrop-blur text-foreground transition-smooth">
                                 Explore Programs
+                            </Link>
+                            <Link href="/contact" className="inline-flex items-center justify-center rounded-md border border-primary/40 hover:border-primary hover:bg-primary/10 font-sans uppercase tracking-[0.3em] text-xs px-8 h-13 py-3.5 bg-background/40 backdrop-blur text-foreground transition-smooth">
+                                Contact Us
                             </Link>
                         </div>
 
