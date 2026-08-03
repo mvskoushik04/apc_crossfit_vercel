@@ -65,38 +65,6 @@ export default function AboutPage() {
                             </div>
                         </div>
                     </div>
-
-                    {/* JOURNEY TIMELINE */}
-                    <div className="relative mt-20">
-                        <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary/20 via-primary/60 to-primary/20 transform -translate-x-1/2 hidden md:block" />
-                        
-                        <div className="space-y-12 md:space-y-16">
-                            {[
-                                { month: "January 2025", title: "Grand Opening", desc: "APC CrossFit inaugurated by local MLA. Ribbon-cutting ceremony with 50+ attendees.", icon: "" },
-                                { month: "February 2025", title: "First Members Join", desc: "Community grows to 25+ members. First transformation stories begin.", icon: "" },
-                                { month: "March 2025", title: "50+ Members", desc: "CrossFit, cricket coaching & strength programs launch. 50+ members milestone achieved.", icon: "" },
-                                { month: "April 2025", title: "State-Level Champions", desc: "First national-level athletes emerge from APC. Youth cricket program expands.", icon: "" },
-                                { month: "May 2025", title: "Community Grows", desc: "Women's strength program launches. 75+ members now train at APC.", icon: "" },
-                                { month: "June 2025", title: "Luxury Facility", desc: "Full CrossFit rig installed. Dedicated cricket net & training area completed.", icon: "" },
-                            ].map((item, index) => (
-                                <div key={index} className={`flex flex-col md:flex-row items-center gap-4 md:gap-8 relative ${
-                                    index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                                }`}>
-                                    <div className={`flex-1 ${index % 2 === 0 ? 'md:text-right md:pr-12' : 'md:text-left md:pl-12'}`}>
-                                        <div className="bg-card border border-border rounded-lg p-6 hover:border-primary/60 transition-smooth shadow-elevated">
-                                            <div className="font-display text-2xl text-foreground">{item.title}</div>
-                                            <div className="text-sm text-muted-foreground mt-2 leading-relaxed">{item.desc}</div>
-                                            <div className="font-sans uppercase tracking-[0.3em] text-[10px] text-primary mt-3 font-semibold">{item.month}</div>
-                                        </div>
-                                    </div>
-
-                                    <div className="flex-1 md:flex-none w-14 hidden md:block" />
-
-                                    <div className="flex-1 hidden md:block" />
-                                </div>
-                            ))}
-                        </div>
-                    </div>
                 </div>
             </section>
 
