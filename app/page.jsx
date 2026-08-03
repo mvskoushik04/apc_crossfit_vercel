@@ -85,7 +85,7 @@ export default function HomePage() {
                 >
                     {[0, 1].map((r) => (
                         <div key={r} className="flex items-center shrink-0" aria-hidden={r === 1 ? "true" : undefined}>
-                            {["CrossFit", "Cricket", "Athletic Power", "Weight Loss", "Personal Coaching", "Strength"].map((w) => (
+                            {["CrossFit", "Cardio", "Muscle Development", "Weight Loss", "Weight Gain", "Fat Loss","Strength", "Power", "Speed", "Mobility", "Flexibility"].map((w) => (
                                 <span key={w + r} className="flex items-center px-10">
                                     {w}
                                     <Sparkles className="ml-10 text-primary" size={18} />
@@ -110,20 +110,20 @@ export default function HomePage() {
                         <div>
                             <Eyebrow>Our Journey</Eyebrow>
                             <h2 className="font-display text-3xl sm:text-4xl lg:text-[42px] leading-[1.1] text-foreground">
-                                From a ribbon-cut in <span className="italic text-gold-gradient">January</span> to <span className="italic text-gold-gradient">50+ athletes</span> in 90 days.
-                            </h2>
+                                    10 years of experience. <span className="italic text-gold-gradient">200 days of making it count.</span>
+                                </h2>
                             <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed font-light">
-                                APC CrossFit opened its doors in January when our local MLA cut the ribbon &mdash; and within three short months we grew into a thriving community of 50+ members. From office-goers seeking transformation to national-level athletes chasing podiums, everyone found a home here.
+                                Before APC CrossFit existed, our mentor spent over a decade coaching athletes across Hyderabad — at cricket academies and competitive training centres. That experience shaped everything that went into building this gym.
                             </p>
                             <p className="mt-4 text-base sm:text-lg text-muted-foreground leading-relaxed font-light">
-                                We are not just another gym. We are a <span className="italic text-primary">standard</span> &mdash; built on state-level cricket championship discipline, coached with international CrossFit methodology, and designed with the polish of a luxury brand.
+                                When we opened our doors in January 2026, we didn't just launch a gym. We created a space where 10 years of coaching knowledge could finally come together under one roof. In just 200 days, we've had 100+ members walk through those doors — each one becoming part of a community that trains hard, shows up for each other, and shares the same belief: real fitness is built together.
                             </p>
                             <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3">
                                 {[
-                                    { icon: AwardIcon, label: "Opened by MLA" },
-                                    { icon: Users, label: "50+ Members" },
+                                    { icon: AwardIcon, label: "10+ Years Mentoring" },
+                                    { icon: Users, label: "100+ Members" },
                                     { icon: Trophy, label: "National Athletes" },
-                                    { icon: Sparkles, label: "Luxury Facility" },
+                                    { icon: Sparkles, label: "Community First" },
                                 ].map(({ icon: Ic, label }) => (
                                     <div key={label} className="bg-card border border-border rounded-lg p-4 text-center hover:border-primary/50 transition-smooth">
                                         <Ic size={20} className="text-primary mx-auto" />
