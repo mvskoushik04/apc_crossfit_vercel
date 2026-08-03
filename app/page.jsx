@@ -27,7 +27,7 @@ export default function HomePage() {
     return (
         <>
             {/* HERO */}
-            <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
+            <section className="relative min-h-screen flex items-center overflow-hidden pt-16 md:pt-20">
                 <div className="absolute inset-0">
                     <Image src={HERO_IMAGES[0]} alt="APC CrossFit athlete training" fill priority sizes="100vw" className="object-cover" />
                     <div className="absolute inset-0 bg-gradient-hero" />
@@ -35,8 +35,8 @@ export default function HomePage() {
                     <div className="absolute inset-0 grid-lines opacity-25" />
                 </div>
 
-                <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-24 w-full text-center">
-                    <div className="space-y-8 flex flex-col items-center animate-fade-up">
+                <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-24 w-full text-center">
+                    <div className="space-y-6 sm:space-y-8 flex flex-col items-center animate-fade-up">
                         <div className="inline-flex items-center gap-3">
                             <span className="h-px w-10 bg-primary" />
                             <span className="font-sans uppercase tracking-[0.4em] text-[11px] text-primary font-semibold">Gajularamaram · Hyderabad</span>
