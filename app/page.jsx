@@ -44,7 +44,7 @@ export default function HomePage() {
                         </div>
 
                         <h1 className="font-display leading-[1.08] text-foreground max-w-4xl" style={{ fontSize: "clamp(32px, 6vw, 48px)" }}>
-                            Where <span className="italic text-gold-gradient font-medium">Discipline</span> meets <span className="italic text-gold-gradient font-medium">Luxury.</span>
+                            Where <span className="text-gold-gradient font-medium">The Real Fitness</span> <span className="text-foreground font-medium">Begins.</span>
                         </h1>
 
                         <p className="text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed font-light">
