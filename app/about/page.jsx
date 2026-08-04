@@ -174,17 +174,6 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* CTA */}
-            <section className="py-24 bg-gradient-dark border-t border-border">
-                <div className="mx-auto max-w-4xl px-4 text-center">
-                    <h2 className="font-display text-3xl sm:text-4xl lg:text-[42px] leading-[1.1] text-foreground">
-                        Come see the box. <span className="italic text-gold-gradient">Meet the mentors.</span>
-                    </h2>
-                    <Link href="/contact" className="inline-flex items-center justify-center gap-2 mt-8 rounded-md bg-accent hover:bg-accent/90 text-accent-foreground font-sans uppercase tracking-[0.3em] text-xs px-10 h-13 py-3.5 font-bold">
-                        Book Your Visit <ArrowRight size={14} />
-                    </Link>
-                </div>
-            </section>
         </>
     );
 }
