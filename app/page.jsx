@@ -257,11 +257,6 @@ export default function HomePage() {
                         </div>
                     </div>
             
-                    <div className="text-center mt-12">
-                        <Link href="/programs" className="inline-flex items-center gap-2 border border-primary/40 hover:border-primary hover:bg-primary/10 font-sans uppercase tracking-[0.3em] text-xs px-6 h-11 rounded-md transition-smooth">
-                            View All Programs <ArrowRight size={14} />
-                        </Link>
-                    </div>
                 </div>
             </section>
             
