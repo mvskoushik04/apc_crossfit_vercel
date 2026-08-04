@@ -73,9 +73,6 @@ export default function Navbar() {
                             <a href={`tel:${SITE.phone}`} className="flex items-center gap-2 text-sm text-muted-foreground px-4">
                                 <Phone size={16} /> {SITE.phone}
                             </a>
-                            <Link href="/contact" className="block w-full text-center rounded-md bg-accent hover:bg-accent/90 text-accent-foreground font-sans uppercase tracking-[0.25em] text-xs py-3 font-bold">
-                                Join Now
-                            </Link>
                         </div>
                     </div>
                 </div>
