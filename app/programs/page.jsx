@@ -88,27 +88,6 @@ export default function ProgramsPage() {
                 </div>
             </section>
 
-            {/* FACILITIES */}
-            <section className="py-24 bg-gradient-dark border-y border-border">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div className="max-w-3xl mb-14">
-                        <span className="font-sans uppercase tracking-[0.4em] text-[11px] text-primary font-semibold">Facilities</span>
-                        <h2 className="mt-5 font-display text-3xl sm:text-4xl lg:text-[42px] leading-[1.1] text-foreground">
-                            Everything you need. <span className="italic text-gold-gradient">Nothing you don&apos;t.</span>
-                        </h2>
-                    </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        {FACILITIES.map((f, i) => (
-                            <div key={i} className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-smooth flex items-start gap-4">
-                                <div className="h-10 w-10 rounded bg-primary/10 border border-primary/30 flex items-center justify-center shrink-0">
-                                    <span className="font-display text-lg text-primary">{String(i + 1).padStart(2, "0")}</span>
-                                </div>
-                                <p className="text-foreground/90 leading-relaxed">{f}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
 
             {/* BUILT FOR EVERY BODY */}
             <section className="py-24 lg:py-32">
