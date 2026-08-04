@@ -50,15 +50,15 @@ export default function AboutPage() {
                             <p className="mt-4 text-lg text-muted-foreground font-light italic">
                                 "The grind, the grit and the commitment behind building a healthy and competitive community."
                             </p>
-                            <div className="mt-8 space-y-5 text-muted-foreground leading-relaxed font-light text-base sm:text-lg">
+                            <div className="mt-8 space-y-4 text-muted-foreground leading-relaxed font-light text-base sm:text-lg">
                                 <p>
-                                    Before APC CrossFit became a reality, there were years of sacrifice, sweat, and an unwavering belief in the power of fitness. Our mentor would travel <span className="italic text-primary">4 hours and 60 kilometres every single day</span> just to train — chasing a dream of becoming an athlete at the highest level. Those long commutes weren't just about physical training; they were about building discipline, resilience, and a deep understanding of what it takes to compete.
+                                    I used to travel <span className="italic text-primary">4 hours and 60 kilometres every single day</span> to train — chasing my dream of becoming an athlete at the highest level. Those long commutes taught me discipline, resilience, and what it truly takes to compete.
                                 </p>
                                 <p>
-                                    Through those years of relentless effort, he gained invaluable knowledge about <span className="italic text-primary">maintaining peak fitness, building athletic strength, and developing a champion's mindset</span>. But more than anything, cricket became his passion — and the lessons learned on the field shaped everything that followed.
+                                    Over the years, I gained deep knowledge about <span className="italic text-primary">fitness, athletic strength, and cricket</span>. But more than the sport itself, I developed a passion for sharing what I learned with others.
                                 </p>
                                 <p>
-                                    The vision for APC CrossFit was born from a simple yet powerful desire: to share that hard-earned knowledge with others. To build a community that is <span className="italic text-primary">competitive, fitter, and healthier</span> — where every member, from a beginner to a national-level athlete, receives the same level of dedication and coaching that was once reserved for the pursuit of a single dream. This isn't just a gym. It's the culmination of years of grit, a commitment to excellence, and a lifelong mission to help others discover their own strength.
+                                    That's what drove me to establish APC CrossFit — to build a community that is <span className="italic text-primary">competitive, fitter, and healthier</span>. A place where every member gets the same dedication and coaching that I once pursued for myself.
                                 </p>
                             </div>
                             <div className="mt-6 text-right">
@@ -73,8 +73,7 @@ export default function AboutPage() {
                             </div>
                             <div className="absolute -bottom-8 -left-4 sm:left-8 bg-card/95 backdrop-blur-xl border border-primary/30 rounded-lg p-6 shadow-elevated max-w-xs">
                                 <div className="font-sans uppercase tracking-[0.3em] text-[10px] text-primary font-semibold">Opened</div>
-                                <div className="font-display text-3xl text-foreground mt-2">January 2025</div>
-                                <div className="text-xs text-muted-foreground mt-1">Inaugurated by local MLA</div>
+                                <div className="font-display text-3xl text-foreground mt-2">January 6th 2026</div>
                             </div>
                         </div>
                     </div>
