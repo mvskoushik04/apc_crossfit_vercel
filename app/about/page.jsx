@@ -35,22 +35,35 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* OUR STORY + JOURNEY TIMELINE */}
+            {/* WHAT MOTIVATED US */}
             <section className="relative py-24 lg:py-32">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20">
+                    <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                         <div>
                             <div className="inline-flex items-center gap-3 mb-5">
                                 <span className="h-px w-10 bg-primary" />
-                                <span className="font-sans uppercase tracking-[0.4em] text-[11px] text-primary font-semibold">Our Story</span>
+                                <span className="font-sans uppercase tracking-[0.4em] text-[11px] text-primary font-semibold">What Motivated Us</span>
                             </div>
                             <h2 className="font-display text-3xl sm:text-4xl lg:text-[42px] leading-[1.1] text-foreground">
-                                Ribbon-cut by our <span className="italic text-gold-gradient">local MLA</span>. Built by champions.
+                                To establish <span className="italic text-gold-gradient">APC CrossFit</span>
                             </h2>
+                            <p className="mt-4 text-lg text-muted-foreground font-light italic">
+                                "The grind, the grit and the commitment behind building a healthy and competitive community."
+                            </p>
                             <div className="mt-8 space-y-5 text-muted-foreground leading-relaxed font-light text-base sm:text-lg">
-                                <p>In January, APC CrossFit officially opened its doors when our local Member of the Legislative Assembly cut the inaugural ribbon &mdash; a moment that marked more than the start of a gym. It marked the arrival of a new standard for fitness in Gajularamaram.</p>
-                                <p>What began as one facility with a big vision quickly became a community of <span className="italic text-primary">50+ committed members</span> within three months &mdash; office-goers, homemakers, students, and competing athletes, training side by side under one roof.</p>
-                                <p>Today we are proud to call ourselves the finest gym in Gajularamaram &mdash; a place where discipline meets luxury, and where every rep is coached with the standards of a state-level champion.</p>
+                                <p>
+                                    Before APC CrossFit became a reality, there were years of sacrifice, sweat, and an unwavering belief in the power of fitness. Our mentor would travel <span className="italic text-primary">4 hours and 60 kilometres every single day</span> just to train — chasing a dream of becoming an athlete at the highest level. Those long commutes weren't just about physical training; they were about building discipline, resilience, and a deep understanding of what it takes to compete.
+                                </p>
+                                <p>
+                                    Through those years of relentless effort, he gained invaluable knowledge about <span className="italic text-primary">maintaining peak fitness, building athletic strength, and developing a champion's mindset</span>. But more than anything, cricket became his passion — and the lessons learned on the field shaped everything that followed.
+                                </p>
+                                <p>
+                                    The vision for APC CrossFit was born from a simple yet powerful desire: to share that hard-earned knowledge with others. To build a community that is <span className="italic text-primary">competitive, fitter, and healthier</span> — where every member, from a beginner to a national-level athlete, receives the same level of dedication and coaching that was once reserved for the pursuit of a single dream. This isn't just a gym. It's the culmination of years of grit, a commitment to excellence, and a lifelong mission to help others discover their own strength.
+                                </p>
+                            </div>
+                            <div className="mt-6 text-right">
+                                <p className="text-sm text-gold-gradient font-display italic">— A. Premchand</p>
+                                <p className="text-xs text-muted-foreground font-sans uppercase tracking-[0.3em]">Founder, APC CrossFit</p>
                             </div>
                         </div>
                         <div className="relative">
