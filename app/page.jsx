@@ -409,33 +409,6 @@ export default function HomePage() {
                 </div>
             </section>
 
-            {/* FINAL CTA */}
-            <section className="relative py-24 lg:py-32 overflow-hidden">
-                <div className="absolute inset-0">
-                    <Image src={HERO_IMAGES[2]} alt="" fill sizes="100vw" className="object-cover opacity-20" />
-                    <div className="absolute inset-0 bg-background/85" />
-                </div>
-                <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-                    <Eyebrow center>Your first class is on us</Eyebrow>
-                    <h2 className="font-display text-3xl sm:text-4xl lg:text-[44px] leading-[1.1] text-foreground">
-                        Ready to <span className="italic text-gold-gradient">rewrite your standard?</span>
-                    </h2>
-                    <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto font-light">
-                        Walk into APC CrossFit as you are. Walk out stronger. Book your no-pressure trial in under a minute.
-                    </p>
-                    <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link href="/contact" className="inline-flex items-center justify-center gap-2 rounded-md bg-accent hover:bg-accent/90 text-accent-foreground font-sans uppercase tracking-[0.3em] text-xs px-10 h-13 py-3.5 font-bold">
-                            Book a Free Trial <ArrowRight size={14} />
-                        </Link>
-                        <a href={`tel:${SITE.phone}`} className="inline-flex items-center justify-center gap-2 rounded-md border border-primary/40 hover:border-primary hover:bg-primary/10 font-sans uppercase tracking-[0.3em] text-xs px-10 h-13 py-3.5 text-foreground">
-                            <Phone size={14} /> {SITE.phone}
-                        </a>
-                    </div>
-                    <div className="mt-10 flex items-center justify-center gap-2 text-sm text-muted-foreground">
-                        <MapPin size={14} className="text-primary" /> {SITE.address}
-                    </div>
-                </div>
-            </section>
         </>
     );
 }
