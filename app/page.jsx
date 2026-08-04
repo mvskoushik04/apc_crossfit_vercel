@@ -7,7 +7,7 @@ import FAQAccordion from "@/components/FAQAccordion";
 import { PROGRAMS, STATS, FAQS, INSTAGRAM_POSTS, SITE, HERO_IMAGES, CHAMPION_IMAGES } from "@/lib/data";
 
 export const metadata = {
-    title: "APC CrossFit — Where Discipline meets Luxury | Best Gym in Gajularamaram",
+    title: "APC CrossFit",
     description:
         "Best gym in Gajularamaram, Hyderabad. APC CrossFit offers CrossFit, cricket coaching, athletic power, weight loss, strength & personal coaching — coached by state-level champions.",
     alternates: { canonical: `${SITE.url}/` },
