@@ -26,7 +26,7 @@ export default function ProgramsPage() {
                             <span className="font-sans uppercase tracking-[0.4em] text-[11px] text-primary font-semibold">Programs</span>
                         </div>
                         <h1 className="font-display text-3xl sm:text-4xl lg:text-[44px] leading-[1.1] text-foreground">
-                            Six paths. <span className="italic text-gold-gradient">One goal.</span>
+                            Two Paths. <span className="italic text-gold-gradient">One goal.</span>
                         </h1>
                         <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed font-light">
                             Whether you are chasing your first pull-up, your first medal, or your first 6-pack &mdash; we have built a program that meets you where you are.
@@ -75,10 +75,7 @@ export default function ProgramsPage() {
                                     </div>
                                     <div className="mt-8 flex flex-wrap gap-3">
                                         <Link href="/contact" className="inline-flex items-center gap-2 rounded-md bg-accent hover:bg-accent/90 text-accent-foreground font-sans uppercase tracking-[0.3em] text-xs px-6 h-12 font-bold">
-                                            Book Trial <ArrowRight size={14} />
-                                        </Link>
-                                        <Link href="/contact" className="inline-flex items-center rounded-md border border-primary/40 hover:border-primary hover:bg-primary/10 font-sans uppercase tracking-[0.3em] text-xs px-6 h-12 text-foreground">
-                                            Ask a Coach
+                                            Contact for Pricing <ArrowRight size={14} />
                                         </Link>
                                     </div>
                                 </div>
