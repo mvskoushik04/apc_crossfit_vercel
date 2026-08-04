@@ -122,30 +122,11 @@ export default function AchievementsPage() {
                         We build <span className="italic text-primary">champions</span>."
                     </blockquote>
                     <p className="mt-6 text-muted-foreground font-sans text-sm tracking-[0.3em] uppercase">
-                        — Head Mentor, APC CrossFit
+                        — A Premchand, APC CrossFit
                     </p>
                 </div>
             </section>
 
-            {/* CTA */}
-            <section className="py-24">
-                <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="font-display text-3xl sm:text-4xl lg:text-[42px] leading-[1.1] text-foreground">
-                        Ready to be our <span className="italic text-gold-gradient">next achievement?</span>
-                    </h2>
-                    <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto font-light">
-                        Join APC CrossFit and become part of a community that celebrates every win — big or small.
-                    </p>
-                    <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link href="/contact" className="inline-flex items-center justify-center gap-2 rounded-md bg-accent hover:bg-accent/90 text-accent-foreground font-sans uppercase tracking-[0.3em] text-xs px-10 h-13 py-3.5 font-bold">
-                            Book a Free Trial <ArrowRight size={14} />
-                        </Link>
-                        <Link href="/programs" className="inline-flex items-center justify-center gap-2 rounded-md border border-primary/40 hover:border-primary hover:bg-primary/10 font-sans uppercase tracking-[0.3em] text-xs px-10 h-13 py-3.5 text-foreground">
-                            View Programs
-                        </Link>
-                    </div>
-                </div>
-            </section>
         </>
     );
 }
