@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Instagram, Facebook, Youtube, MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Instagram, Facebook, Youtube, MapPin, Phone, Clock } from "lucide-react";
 import Logo from "./Logo";
 import { SITE, NAV_LINKS, PROGRAMS } from "@/lib/data";
 
@@ -11,7 +11,7 @@ export default function Footer() {
                     <div className="space-y-5">
                         <Logo size="md" />
                         <p className="text-sm text-muted-foreground leading-relaxed font-light">
-                            The strongest CrossFit box in Gajularamaram. Forging athletes since January.
+                            The strongest CrossFit box near you. Forging athletes since a decade.
                         </p>
                         <div className="flex items-center gap-3">
                             {[
@@ -47,10 +47,38 @@ export default function Footer() {
                     <div>
                         <h4 className="font-sans uppercase tracking-[0.25em] text-xs text-foreground mb-5 font-semibold">Visit Us</h4>
                         <ul className="space-y-3 text-sm text-muted-foreground">
-                            <li className="flex gap-3"><MapPin size={16} className="text-primary shrink-0 mt-0.5" /><span>{SITE.address}</span></li>
-                            <li className="flex gap-3"><Phone size={16} className="text-primary shrink-0 mt-0.5" /><a href={`tel:${SITE.phone}`} className="hover:text-primary transition-smooth">{SITE.phone}</a></li>
-                            <li className="flex gap-3"><Mail size={16} className="text-primary shrink-0 mt-0.5" /><a href={`mailto:${SITE.email}`} className="hover:text-primary transition-smooth">{SITE.email}</a></li>
-                            <li className="flex gap-3"><Clock size={16} className="text-primary shrink-0 mt-0.5" /><span>Mon–Sat: 5 AM – 10 PM<br />Sun: 6 AM – 12 PM</span></li>
+                            <li className="flex gap-3">
+                                <MapPin size={16} className="text-primary shrink-0 mt-0.5" />
+                                <div className="w-full">
+                                    <div className="relative rounded-lg overflow-hidden aspect-[4/3] border border-border">
+                                        <iframe
+                                            src={SITE.mapEmbed}
+                                            width="100%"
+                                            height="100%"
+                                            style={{ border: 0 }}
+                                            loading="lazy"
+                                            referrerPolicy="strict-origin-when-cross-origin"
+                                            allowFullScreen
+                                            title="APC CrossFit Location"
+                                        />
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="flex gap-3">
+                                <Phone size={16} className="text-primary shrink-0 mt-0.5" />
+                                <div>
+                                    <a href={`tel:${SITE.phone}`} className="hover:text-primary transition-smooth block">{SITE.phone}</a>
+                                    <a href={`tel:+916281685298`} className="hover:text-primary transition-smooth block mt-1">+91 62816 85298</a>
+                                </div>
+                            </li>
+                            <li className="flex gap-3">
+                                <Clock size={16} className="text-primary shrink-0 mt-0.5" />
+                                <span>
+                                    Mon–Sat: 5:30 AM – 12:30 PM & 5:30 PM – 9:30 PM
+                                    <br />
+                                    Sun: 6 AM – 10 AM
+                                </span>
+                            </li>
                         </ul>
                     </div>
                 </div>
