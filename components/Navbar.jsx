@@ -47,9 +47,7 @@ export default function Navbar() {
                         <a href={`tel:${SITE.phone}`} className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-smooth">
                             <Phone size={16} /><span className="font-medium">{SITE.phone}</span>
                         </a>
-                        <Link href="/contact" className="inline-flex items-center rounded-md bg-accent hover:bg-accent/90 text-accent-foreground font-sans uppercase tracking-[0.25em] text-xs px-6 h-10 font-bold transition-smooth">
-                            Join Now
-                        </Link>
+                        {/* "Join Now" button removed */}
                     </div>
 
                     <button onClick={() => setOpen(!open)} className="lg:hidden p-2 text-foreground" aria-label="Toggle menu">
