@@ -85,7 +85,7 @@ export default function HomePage() {
                 >
                     {[0, 1].map((r) => (
                         <div key={r} className="flex items-center shrink-0" aria-hidden={r === 1 ? "true" : undefined}>
-                            {["CrossFit", "Cardio", "Muscle Development", "Weight Loss", "Weight Gain", "Fat Loss","Strength", "Power", "Speed", "Mobility", "Flexibility"].map((w) => (
+                            {["CrossFit", "Cardio", "Muscle Building", "Weight Loss", "Weight Gain", "Fat Loss","Strength", "Power", "Speed", "Mobility", "Flexibility"].map((w) => (
                                 <span key={w + r} className="flex items-center px-10">
                                     {w}
                                     <Sparkles className="ml-10 text-primary" size={18} />
@@ -138,42 +138,133 @@ export default function HomePage() {
 
             {/* PROGRAMS */}
             <section className="relative py-24 lg:py-32 bg-gradient-dark border-y border-border overflow-hidden">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
-                        <div>
-                            <Eyebrow>Signature Programs</Eyebrow>
-                            <h2 className="font-display text-3xl sm:text-4xl lg:text-[42px] leading-[1.1] text-foreground">
-                                Six paths.<br /><span className="italic text-gold-gradient">One elite standard.</span>
-                            </h2>
-                        </div>
-                        <Link href="/programs" className="inline-flex items-center gap-2 border border-primary/40 hover:border-primary hover:bg-primary/10 font-sans uppercase tracking-[0.3em] text-xs px-5 h-11 rounded-md transition-smooth">
-                            View All <ArrowRight size={14} />
-                        </Link>
+                <div className="absolute inset-0 grid-lines opacity-20" />
+                <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-primary/5 blur-3xl" />
+                <div className="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-primary/5 blur-3xl" />
+                
+                <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div className="text-center max-w-3xl mx-auto mb-16">
+                        <Eyebrow center>Our Programs</Eyebrow>
+                        <h2 className="font-display text-3xl sm:text-4xl lg:text-[42px] leading-[1.1] text-foreground">
+                            Two paths. <span className="italic text-gold-gradient">One mission.</span>
+                        </h2>
+                        <p className="mt-6 text-lg text-muted-foreground leading-relaxed font-light">
+                            Whether you're starting your fitness journey or chasing elite performance — we have a program built for you.
+                        </p>
                     </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {PROGRAMS.map((p) => (
-                            <Link key={p.id} href="/programs" className="group relative rounded-lg overflow-hidden bg-card border border-border hover:border-primary transition-smooth shadow-elevated flex flex-col">
-                                <div className="relative overflow-hidden aspect-[4/3]">
-                                    <Image src={p.image} alt={p.title} fill sizes="(max-width: 1024px) 50vw, 33vw" className="object-cover group-hover:scale-105 transition-smooth" />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
-                                </div>
-                                <div className="p-6 flex flex-col flex-1 -mt-16 relative">
-                                    <div className="font-sans uppercase tracking-[0.3em] text-[10px] text-primary mb-2">{p.subtitle}</div>
-                                    <h3 className="font-display text-3xl text-foreground leading-tight">{p.title}</h3>
-                                    <p className="text-sm text-muted-foreground mt-3 leading-relaxed font-light">{p.description}</p>
-                                    <div className="mt-auto pt-5 flex items-center justify-between text-xs">
-                                        <span className="text-muted-foreground">{p.duration} · {p.level}</span>
-                                        <span className="text-primary group-hover:translate-x-1 transition-smooth flex items-center gap-1 font-sans uppercase tracking-[0.25em]">
-                                            Explore <ArrowRight size={12} />
-                                        </span>
+            
+                    <div className="grid md:grid-cols-2 gap-8">
+                        {/* General Fitness */}
+                        <div className="group relative bg-card border border-border hover:border-primary/60 rounded-2xl overflow-hidden transition-smooth shadow-elevated hover:shadow-gold">
+                            <div className="relative aspect-[16/10] overflow-hidden">
+                                <Image 
+                                    src="/images/program-general-fitness.jpg" 
+                                    alt="General Fitness Program" 
+                                    fill 
+                                    sizes="(max-width: 768px) 100vw, 50vw" 
+                                    className="object-cover group-hover:scale-105 transition-smooth duration-500"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent" />
+                                <div className="absolute top-6 left-6">
+                                    <div className="px-4 py-1.5 bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full">
+                                        <span className="font-sans uppercase tracking-[0.3em] text-[9px] text-primary font-semibold">Program 01</span>
                                     </div>
                                 </div>
-                            </Link>
-                        ))}
+                                <div className="absolute bottom-6 left-6 right-6">
+                                    <h3 className="font-display text-3xl sm:text-4xl text-foreground drop-shadow-lg">General Fitness</h3>
+                                    <p className="text-sm text-muted-foreground/90 mt-2 font-light">Build a strong foundation for life.</p>
+                                </div>
+                            </div>
+                            
+                            <div className="p-8">
+                                <p className="text-muted-foreground leading-relaxed font-light">
+                                    Designed for anyone looking to transform their body and health — from beginners to those getting back on track.
+                                </p>
+                                
+                                <div className="mt-6 grid grid-cols-2 gap-2">
+                                    {[
+                                        "Strength Development",
+                                        "Cardio",
+                                        "Muscle Building",
+                                        "Weight Loss",
+                                        "Weight Gain",
+                                        "Fat Loss",
+                                        "Diet Guidance",
+                                        "In-person Workout Guidance"
+                                    ].map((item) => (
+                                        <div key={item} className="flex items-center gap-2">
+                                            <div className="h-1.5 w-1.5 rounded-full bg-primary/60 flex-shrink-0" />
+                                            <span className="text-xs text-foreground/80 font-light">{item}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                                
+                                <Link href="/contact" className="inline-flex items-center gap-2 mt-8 text-primary hover:text-primary-glow font-sans uppercase tracking-[0.3em] text-xs group">
+                                    Get Started <ArrowRight size={14} className="group-hover:translate-x-1 transition-smooth" />
+                                </Link>
+                            </div>
+                        </div>
+            
+                        {/* Sports Performance */}
+                        <div className="group relative bg-card border border-border hover:border-primary/60 rounded-2xl overflow-hidden transition-smooth shadow-elevated hover:shadow-gold">
+                            <div className="relative aspect-[16/10] overflow-hidden">
+                                <Image 
+                                    src="/images/program-sports-performance.jpg" 
+                                    alt="Sports Performance Program" 
+                                    fill 
+                                    sizes="(max-width: 768px) 100vw, 50vw" 
+                                    className="object-cover group-hover:scale-105 transition-smooth duration-500"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent" />
+                                <div className="absolute top-6 left-6">
+                                    <div className="px-4 py-1.5 bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full">
+                                        <span className="font-sans uppercase tracking-[0.3em] text-[9px] text-primary font-semibold">Program 02</span>
+                                    </div>
+                                </div>
+                                <div className="absolute bottom-6 left-6 right-6">
+                                    <h3 className="font-display text-3xl sm:text-4xl text-foreground drop-shadow-lg">Sports Performance</h3>
+                                    <p className="text-sm text-muted-foreground/90 mt-2 font-light">Train like a champion. Perform like one.</p>
+                                </div>
+                            </div>
+                            
+                            <div className="p-8">
+                                <p className="text-muted-foreground leading-relaxed font-light">
+                                    Engineered for athletes who want to dominate their sport — whether you're a cricketer, runner, or ice skater.
+                                </p>
+                                
+                                <div className="mt-6 grid grid-cols-2 gap-2">
+                                    {[
+                                        "Strength Development",
+                                        "Power Enhancement",
+                                        "Speed Training",
+                                        "Mobility Workouts",
+                                        "Flexibility",
+                                        "Force Improvement",
+                                        "Diet Plans",
+                                        "Muscle Bulking"
+                                    ].map((item) => (
+                                        <div key={item} className="flex items-center gap-2">
+                                            <div className="h-1.5 w-1.5 rounded-full bg-primary/60 flex-shrink-0" />
+                                            <span className="text-xs text-foreground/80 font-light">{item}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                                
+                                <Link href="/contact" className="inline-flex items-center gap-2 mt-8 text-primary hover:text-primary-glow font-sans uppercase tracking-[0.3em] text-xs group">
+                                    Get Started <ArrowRight size={14} className="group-hover:translate-x-1 transition-smooth" />
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div className="text-center mt-12">
+                        <Link href="/programs" className="inline-flex items-center gap-2 border border-primary/40 hover:border-primary hover:bg-primary/10 font-sans uppercase tracking-[0.3em] text-xs px-6 h-11 rounded-md transition-smooth">
+                            View All Programs <ArrowRight size={14} />
+                        </Link>
                     </div>
                 </div>
             </section>
-
+            
             {/* CHAMPIONS */}
             <section className="relative py-24 lg:py-32">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
