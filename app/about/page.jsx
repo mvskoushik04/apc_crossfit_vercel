@@ -4,9 +4,9 @@ import { Compass, Target, Heart, ArrowRight, Users, Shield, Award, Star, CheckCi
 import { CORE_PRINCIPLES, HERO_IMAGES, GALLERY_IMAGES, SITE } from "@/lib/data";
 
 export const metadata = {
-    title: "About APC CrossFit — The APC Standard | State-Level Cricket Coaches",
+    title: "About APC CrossFit ",
     description:
-        "APC CrossFit opened January in Gajularamaram, inaugurated by the local MLA. Coached by state-level cricket champions with a mission to build national athletes and healthier communities.",
+        "APC CrossFit opened January in Gajularamaram, Coached by state-level cricket champions with a mission to build national athletes and healthier communities.",
     alternates: { canonical: `${SITE.url}/about` },
 };
 
