@@ -183,13 +183,18 @@ export default function HomePage() {
                                 
                                 <div className="mt-6 grid grid-cols-2 gap-2">
                                     {[
+                                        "Diet Guidance",
+                                        "Crossfit",
                                         "Strength Development",
                                         "Cardio",
                                         "Muscle Building",
                                         "Weight Loss",
                                         "Weight Gain",
                                         "Fat Loss",
-                                        "Diet Guidance",
+                                        "Hyrox",
+                                        "Plyometrics",
+                                        "Endurance",
+                                        "High Intensity Interval Training",
                                         "In-person Workout Guidance"
                                     ].map((item) => (
                                         <div key={item} className="flex items-center gap-2">
@@ -234,14 +239,21 @@ export default function HomePage() {
                                 
                                 <div className="mt-6 grid grid-cols-2 gap-2">
                                     {[
+                                        "Diet Guidance",
+                                        "Crossfit",
+                                        "Cardio",
                                         "Strength Development",
                                         "Power Enhancement",
                                         "Speed Training",
                                         "Mobility Workouts",
                                         "Flexibility",
+                                        "Hyrox",
+                                        "Plyometrics",
                                         "Force Improvement",
-                                        "Diet Plans",
-                                        "Muscle Bulking"
+                                        "Muscle Bulking",
+                                        "Endurance",
+                                        "High Intensity Interval Training",
+                                        "In-person Workout Guidance"
                                     ].map((item) => (
                                         <div key={item} className="flex items-center gap-2">
                                             <div className="h-1.5 w-1.5 rounded-full bg-primary/60 flex-shrink-0" />
