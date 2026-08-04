@@ -398,7 +398,7 @@ export default function HomePage() {
                                 Everything you want to know, <span className="italic text-gold-gradient">before you walk in.</span>
                             </h2>
                             <p className="mt-6 text-muted-foreground leading-relaxed font-light">
-                                A few of the most common questions we get from our Gajularamaram community.
+                                A few of the most common questions we get from our community.
                             </p>
                             <Link href="/contact" className="inline-flex items-center gap-2 mt-8 text-primary hover:text-primary-glow font-sans uppercase tracking-[0.3em] text-xs">
                                 See All FAQs <ArrowRight size={14} />
