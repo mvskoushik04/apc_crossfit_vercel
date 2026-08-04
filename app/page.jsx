@@ -343,11 +343,6 @@ export default function HomePage() {
                         ))}
                     </div>
             
-                    <div className="text-center mt-12">
-                        <Link href="/about" className="inline-flex items-center gap-2 text-primary hover:text-primary-glow font-sans uppercase tracking-[0.3em] text-xs group">
-                            Meet Our Champions <ArrowRight size={14} className="group-hover:translate-x-1 transition-smooth" />
-                        </Link>
-                    </div>
                 </div>
             </section>
 
