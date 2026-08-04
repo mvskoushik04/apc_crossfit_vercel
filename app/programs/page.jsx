@@ -4,9 +4,9 @@ import { ArrowRight, Clock, CheckCircle2, Flame, Dumbbell, Heart, Target, Trophy
 import { PROGRAMS, FACILITIES, SITE } from "@/lib/data";
 
 export const metadata = {
-    title: "Programs — CrossFit, Cricket, Weight Loss & Strength Training",
+    title: "APC Crossfit-Programs",
     description:
-        "Six signature programs at APC CrossFit Gajularamaram: CrossFit training, cricket coaching, athletic power, weight loss, strength training and personal coaching.",
+        "Two signature programs at APC CrossFit Gajularamaram: General Fitness and Sports Performance Training.",
     alternates: { canonical: `${SITE.url}/programs` },
 };
 
