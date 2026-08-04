@@ -52,7 +52,7 @@ export default function AboutPage() {
                             </p>
                             <div className="mt-8 space-y-4 text-muted-foreground leading-relaxed font-light text-base sm:text-lg">
                                 <p>
-                                    I used to travel <span className="italic text-primary">4 hours and 60 kilometres every single day</span> to train — chasing my dream of becoming an athlete at the highest level. Those long commutes taught me discipline, resilience, and what it truly takes to compete.
+                                    I used to travel <span className="italic text-primary">4 hours and 60 kilometres every single day</span> to prepare myself for chasing my dream of becoming an athlete at the highest level. Those long commutes taught me discipline, resilience, and what it truly takes to compete.
                                 </p>
                                 <p>
                                     Over the years, I gained deep knowledge about <span className="italic text-primary">fitness, athletic strength, and cricket</span>. But more than the sport itself, I developed a passion for sharing what I learned with others.
