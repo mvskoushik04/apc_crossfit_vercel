@@ -265,33 +265,88 @@ export default function HomePage() {
             
                 </div>
             </section>
-            
+
             {/* CHAMPIONS */}
             <section className="relative py-24 lg:py-32">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div className="grid lg:grid-cols-2 gap-14 items-center">
-                        <div>
-                            <Eyebrow>Our Champions</Eyebrow>
-                            <h2 className="font-display text-3xl sm:text-4xl lg:text-[42px] leading-[1.1] text-foreground">
-                                Home of <span className="italic text-gold-gradient">national-level</span> athletes and young <span className="italic text-gold-gradient">champions under&nbsp;15.</span>
-                            </h2>
-                            <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed font-light">
-                                Several of our members have brought home national-level laurels &mdash; a direct reflection of the quality of coaching, discipline and community at APC CrossFit. We are equally proud of our youngest athletes, some as young as under 15, training alongside seasoned lifters.
-                            </p>
-                            <p className="mt-4 text-base sm:text-lg text-muted-foreground leading-relaxed font-light">
-                                Our leadership mentors are <span className="italic text-primary">state-level cricket champions</span> &mdash; people who have lived the podium and now build others up to reach it.
-                            </p>
-                            <Link href="/about" className="inline-flex items-center gap-2 mt-8 text-primary hover:text-primary-glow font-sans uppercase tracking-[0.3em] text-xs group">
-                                Meet the Mentors <ArrowRight size={14} className="group-hover:translate-x-1 transition-smooth" />
-                            </Link>
-                        </div>
-                        <div className="grid grid-cols-2 gap-4">
-                            {CHAMPION_IMAGES.map((src, i) => (
-                                <div key={src} className={`relative rounded-lg overflow-hidden ${i % 2 === 0 ? "aspect-[4/5]" : "aspect-square"} ${i === 1 ? "translate-y-8" : ""} ${i === 3 ? "translate-y-8" : ""}`}>
-                                    <Image src={src} alt="APC CrossFit champion" fill sizes="(max-width: 1024px) 50vw, 25vw" className="object-cover" />
+                    <div className="text-center max-w-4xl mx-auto mb-14">
+                        <Eyebrow center>Our Champions</Eyebrow>
+                        <h2 className="font-display text-3xl sm:text-4xl lg:text-[42px] leading-[1.1] text-foreground">
+                            Home of <span className="italic text-gold-gradient">national-level</span> athletes and young <span className="italic text-gold-gradient">champions under&nbsp;15.</span>
+                        </h2>
+                        <p className="mt-6 text-lg text-muted-foreground leading-relaxed font-light">
+                            We are incredibly proud of our students who have achieved remarkable success at the national, state, and district levels — a testament to the quality of coaching and community at APC CrossFit.
+                        </p>
+                    </div>
+            
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {[
+                            {
+                                name: "Sai Teja",
+                                achievement: "National Level Skating Champion",
+                                image: "/images/champions/sai-teja.jpg"
+                            },
+                            {
+                                name: "Raja",
+                                achievement: "District Level Athletics & Cricket",
+                                image: "/images/champions/raja.jpg"
+                            },
+                            {
+                                name: "Nakshatra",
+                                achievement: "Selected - Guntur U-15 Girls Cricket",
+                                image: "/images/champions/nakshatra.jpg"
+                            },
+                            {
+                                name: "Pranav",
+                                achievement: "Selected - U-14 Cricket Team USA",
+                                image: "/images/champions/pranav.jpg"
+                            },
+                            {
+                                name: "Manideep",
+                                achievement: "C-Division & B-Division Cricket Leagues",
+                                image: "/images/champions/manideep.jpg"
+                            },
+                            {
+                                name: "Nandini & Gayatri",
+                                achievement: "State Level Running - Podium Contenders",
+                                image: "/images/champions/nandini-gayatri.jpg"
+                            },
+                        ].map((champion, index) => (
+                            <div 
+                                key={champion.name} 
+                                className="group relative bg-card border border-border hover:border-primary/60 rounded-lg overflow-hidden transition-smooth shadow-elevated hover:shadow-gold"
+                            >
+                                <div className="relative aspect-[4/3] overflow-hidden">
+                                    <Image 
+                                        src={champion.image} 
+                                        alt={champion.name} 
+                                        fill 
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" 
+                                        className="object-cover group-hover:scale-105 transition-smooth duration-500"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
+                                    
+                                    {/* Badge */}
+                                    <div className="absolute top-4 left-4">
+                                        <div className="px-3 py-1 bg-primary/90 backdrop-blur-sm rounded-full">
+                                            <span className="font-sans uppercase tracking-[0.3em] text-[8px] text-primary-foreground font-semibold">Champion</span>
+                                        </div>
+                                    </div>
+                                    
+                                    {/* Name and Achievement - Overlay on image */}
+                                    <div className="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-background via-background/80 to-transparent">
+                                        <h3 className="font-display text-xl text-foreground">{champion.name}</h3>
+                                        <p className="text-xs text-primary font-sans uppercase tracking-[0.25em] mt-1">{champion.achievement}</p>
+                                    </div>
                                 </div>
-                            ))}
-                        </div>
+                            </div>
+                        ))}
+                    </div>
+            
+                    <div className="text-center mt-12">
+                        <Link href="/about" className="inline-flex items-center gap-2 text-primary hover:text-primary-glow font-sans uppercase tracking-[0.3em] text-xs group">
+                            Meet Our Champions <ArrowRight size={14} className="group-hover:translate-x-1 transition-smooth" />
+                        </Link>
                     </div>
                 </div>
             </section>
