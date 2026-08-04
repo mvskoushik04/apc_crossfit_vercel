@@ -65,8 +65,8 @@ export const metadata = {
         // google: "your-google-verification-code",
     },
     icons: {
-        icon: [{ url: "/favicon.ico", type: "image/x-icon" }],
-        apple: [{ url: "/images/logo.png" }],
+        icon: "/favicon.ico",
+        apple: "/apple-touch-icon.png",
     },
     category: "Health & Fitness",
 };
