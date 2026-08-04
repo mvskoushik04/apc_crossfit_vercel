@@ -4,7 +4,7 @@ import { ArrowRight, Trophy, Star, Award, Medal, Calendar, Users, ChevronRight }
 import { ACHIEVEMENTS, SITE } from "@/lib/data";
 
 export const metadata = {
-    title: "Achievements — National-Level Athletes | APC CrossFit Gajularamaram",
+    title: "APC Crossfit-Achievements",
     description:
         "APC CrossFit members have won national-level honours including powerlifting championships, BCCI zonal selections, CrossFit Open top 10 finishes, and youth athlete awards.",
     alternates: { canonical: `${SITE.url}/achievements` },
