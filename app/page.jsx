@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
-import { ArrowRight, ChevronDown, Sparkles, Star, MapPin, Phone, Instagram, Trophy, Users, Award as AwardIcon, Play } from "lucide-react";
+import { ArrowRight, ChevronDown, Sparkles, Star, MapPin, Phone, Instagram, Trophy, Users, Award as AwardIcon } from "lucide-react";
+import InstagramEmbed from "@/components/InstagramEmbed";
 import FAQAccordion from "@/components/FAQAccordion";
 import { PROGRAMS, STATS, FAQS, INSTAGRAM_POSTS, SITE, HERO_IMAGES, CHAMPION_IMAGES } from "@/lib/data";
 
@@ -371,45 +372,13 @@ export default function HomePage() {
                             <Instagram size={14} /> Follow @apccrossfit
                         </a>
                     </div>
-                    
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {INSTAGRAM_POSTS.map((p, i) => (
-                            <a 
-                                key={p.url} 
-                                href={p.url} 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className={`group relative rounded-lg overflow-hidden bg-card border border-border hover:border-primary transition-smooth shadow-elevated ${i === 2 ? "sm:col-span-2 lg:col-span-1" : ""}`}
-                            >
-                                <div className="relative aspect-square bg-gradient-to-br from-primary/20 to-primary/5">
-                                    <div className="absolute inset-0 flex flex-col items-center justify-center">
-                                        <div className="h-16 w-16 rounded-full bg-primary/20 border-2 border-primary/30 flex items-center justify-center">
-                                            <Play size={28} className="text-primary" />
-                                        </div>
-                                        <p className="mt-4 text-xs text-muted-foreground font-sans uppercase tracking-[0.3em]">
-                                            {p.type === "reel" ? "Watch Reel" : "View Post"}
-                                        </p>
-                                    </div>
-                                    <div className="absolute top-3 left-3 px-3 py-1 bg-black/60 backdrop-blur-sm rounded-full flex items-center gap-1.5">
-                                        <Instagram size={12} className="text-white" />
-                                        <span className="text-[9px] text-white font-sans uppercase tracking-[0.2em]">Instagram</span>
-                                    </div>
-                                    {p.type === "reel" && (
-                                        <div className="absolute top-3 right-3 px-3 py-1 bg-primary/90 backdrop-blur-sm rounded-full flex items-center gap-1">
-                                            <Play size={10} className="text-white fill-white" />
-                                            <span className="text-[8px] text-white font-sans uppercase tracking-[0.2em] font-bold">Reel</span>
-                                        </div>
-                                    )}
-                                    <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                                        <span className="text-white font-sans uppercase tracking-[0.3em] text-xs bg-black/60 px-4 py-2 rounded-full">
-                                            View on Instagram
-                                        </span>
-                                    </div>
-                                </div>
-                            </a>
+                            <div key={p.url} className={i === 2 ? "sm:col-span-2 lg:col-span-1" : ""}>
+                                <InstagramEmbed url={p.url} type={p.type} />
+                            </div>
                         ))}
                     </div>
-                    
                     <div className="text-center mt-10">
                         <Link href="/gallery" className="inline-flex items-center gap-2 text-primary hover:text-primary-glow font-sans uppercase tracking-[0.3em] text-xs">
                             More in the Gallery <ArrowRight size={14} />
