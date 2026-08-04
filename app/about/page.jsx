@@ -131,8 +131,8 @@ export default function AboutPage() {
                     </div>
                     <div className="grid md:grid-cols-3 gap-5">
                         {[
-                            { icon: Compass, title: "Our Vision", text: "To become North Hyderabad's most respected strength & conditioning destination — producing champions and transforming lives at every age." },
-                            { icon: Target, title: "Our Mission", text: "Deliver world-class coaching in an elegant environment, ensuring every member — from age 12 to 60 — achieves goals they once thought impossible." },
+                            { icon: Compass, title: "Our Vision", text: "To build a competitive and fitter community — where every member discovers their strength, pushes their limits, and grows together." },
+                            { icon: Target, title: "Our Mission", text: "To deliver high-quality coaching in a supportive environment, helping every member — from age 6 to 60 — achieve goals they once thought out of reach." },
                             { icon: Heart, title: "Our Values", text: "Discipline. Community. Excellence. Integrity. We do the work when no one is watching, and we celebrate every win, big or small." },
                         ].map((v) => {
                             const Ic = v.icon;
@@ -163,14 +163,14 @@ export default function AboutPage() {
                                 National laurels. <span className="italic text-gold-gradient">Young champions.</span>
                             </h2>
                             <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed font-light">
-                                A number of our members have won national-level honours — a testament to the standard of coaching, mentorship and community here at APC CrossFit. Where the perfect fit exists, we highlight it: young athletes under 15, senior lifters, sport-specific competitors, and women reclaiming strength for the first time.
+                                A number of our members have won national-level honours — a testament to the standard of coaching, mentorship and community here at APC CrossFit. Where the perfect fit exists, we highlight it: young athletes above 6yrs, senior lifters, sport-specific competitors, and women reclaiming strength for the first time.
                             </p>
                             <ul className="mt-8 space-y-3">
                                 {[
                                     "Multiple national-level athletes trained at APC CrossFit",
-                                    "Youth athletes (under 15) mentored in cricket & athletics",
+                                    "Youth athletes (above 6yrs) mentored in cricket & athletics",
                                     "A safe, empowering strength environment for women",
-                                    "Community of 50+ transformations in the first 90 days",
+                                    "Community of 100+ transformations in the first 180 days",
                                 ].map((it) => (
                                     <li key={it} className="flex items-start gap-3">
                                         <Star size={16} className="text-primary shrink-0 mt-1" strokeWidth={1.8} />
