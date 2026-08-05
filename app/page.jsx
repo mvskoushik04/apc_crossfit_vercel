@@ -103,15 +103,22 @@ export default function HomePage() {
                         <div className="relative">
                             <div className="relative rounded-lg overflow-hidden aspect-[4/5] shadow-elevated">
                                 <video 
+                                    id="journeyVideo"
                                     src="/videos/our-journey.mp4" 
                                     autoPlay
+                                    muted
                                     playsInline
                                     className="w-full h-full object-cover"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
+                                
+                                <button 
+                                    onclick="const v = document.getElementById('journeyVideo'); v.muted = !v.muted; this.textContent = v.muted ? 'Unmute' : 'Mute';"
+                                    className="absolute top-4 right-4 z-10 bg-black/60 hover:bg-black/80 text-white/90 px-4 py-1.5 rounded-full text-xs font-medium tracking-wide transition-smooth backdrop-blur-sm"
+                                >
+                                    Unmute
+                                </button>
                             </div>
-                            <div className="absolute -bottom-6 -right-6 hidden md:block h-32 w-32 border-2 border-primary/40 rounded-lg" />
-                        </div>
                         <div>
                             <Eyebrow>Our Journey</Eyebrow>
                             <h2 className="font-display text-3xl sm:text-4xl lg:text-[42px] leading-[1.1] text-foreground">
