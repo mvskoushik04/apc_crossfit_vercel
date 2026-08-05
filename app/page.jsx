@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
-import { ArrowRight, ChevronDown, Sparkles, Star, MapPin, Phone, Instagram, Trophy, Users, Award as AwardIcon } from "lucide-react";
+import { ArrowRight, ChevronDown, Sparkles, Star, MapPin, Phone, Instagram, Trophy, Users, Award as AwardIcon, Play, Volume2, VolumeX } from "lucide-react";
 import InstagramEmbed from "@/components/InstagramEmbed";
 import FAQAccordion from "@/components/FAQAccordion";
 import { PROGRAMS, STATS, FAQS, INSTAGRAM_POSTS, SITE, HERO_IMAGES, CHAMPION_IMAGES } from "@/lib/data";
+import { useState, useRef } from "react";
 
 export const metadata = {
     title: "APC CrossFit",
@@ -24,6 +25,9 @@ function Eyebrow({ children, center }) {
 }
 
 export default function HomePage() {
+    const [isPlaying, setIsPlaying] = useState(false);
+    const [isMuted, setIsMuted] = useState(true);
+    const videoRef = useRef(null);
     return (
         <>
             {/* HERO */}
@@ -103,27 +107,64 @@ export default function HomePage() {
                         <div className="relative">
                             <div className="relative rounded-lg overflow-hidden aspect-[4/5] shadow-elevated">
                                 <video 
+                                    ref={videoRef}
                                     src="/videos/our-journey.mp4" 
-                                    autoPlay 
-                                    muted 
-                                    loop 
+                                    muted={isMuted}
                                     playsInline
                                     className="w-full h-full object-cover"
+                                    onEnded={() => setIsPlaying(false)}
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
+                                
+                                {/* Play/Replay Button - Bottom Right */}
+                                <button 
+                                    onClick={() => {
+                                        if (videoRef.current) {
+                                            if (videoRef.current.paused || videoRef.current.ended) {
+                                                videoRef.current.play();
+                                                setIsPlaying(true);
+                                            } else {
+                                                videoRef.current.pause();
+                                                setIsPlaying(false);
+                                            }
+                                        }
+                                    }}
+                                    className="absolute bottom-6 right-6 h-12 w-12 rounded-full bg-primary/90 backdrop-blur hover:bg-primary transition-smooth flex items-center justify-center shadow-gold z-10"
+                                >
+                                    {isPlaying ? (
+                                        <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                            <rect x="6" y="4" width="4" height="16" />
+                                            <rect x="14" y="4" width="4" height="16" />
+                                        </svg>
+                                    ) : (
+                                        <Play size={20} className="text-white ml-1" />
+                                    )}
+                                </button>
+                                
+                                {/* Mute/Unmute Button - Bottom Left */}
+                                <button 
+                                    onClick={() => setIsMuted(!isMuted)}
+                                    className="absolute bottom-6 left-6 h-10 w-10 rounded-full bg-black/60 backdrop-blur hover:bg-black/80 transition-smooth flex items-center justify-center z-10"
+                                >
+                                    {isMuted ? (
+                                        <VolumeX size={18} className="text-white" />
+                                    ) : (
+                                        <Volume2 size={18} className="text-white" />
+                                    )}
+                                </button>
                             </div>
                             <div className="absolute -bottom-6 -right-6 hidden md:block h-32 w-32 border-2 border-primary/40 rounded-lg" />
                         </div>
                         <div>
                             <Eyebrow>Our Journey</Eyebrow>
                             <h2 className="font-display text-3xl sm:text-4xl lg:text-[42px] leading-[1.1] text-foreground">
-                                    10 years of experience. <span className="italic text-gold-gradient">200 days of making it count.</span>
-                                </h2>
+                                10 years of experience. <span className="italic text-gold-gradient">200 days of making it count.</span>
+                            </h2>
                             <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed font-light">
-                                Before APC CrossFit existed, our mentor spent over a decade coaching athletes across Hyderabad — at cricket academies and competitive training centres. That experience shaped everything that went into building this Crossfit gym.
+                                Before APC CrossFit existed, our mentor spent over a decade coaching athletes across Hyderabad — at cricket academies and competitive training centres. That experience shaped everything that went into building this gym.
                             </p>
                             <p className="mt-4 text-base sm:text-lg text-muted-foreground leading-relaxed font-light">
-                                When we opened our CrossFit gym on January 26th 2026, we didn't just launch a crossfit gym. We created a space where 10 years of coaching knowledge could finally come together under one roof. In just 200 days, we've had 100+ members walk through those doors — each one becoming part of a community that trains hard, shows up for each other, and shares the same belief: real fitness is built together.
+                                When we opened our doors in January 2026, we didn't just launch a gym. We created a space where 10 years of coaching knowledge could finally come together under one roof. In just 200 days, we've had 100+ members walk through those doors — each one becoming part of a community that trains hard, shows up for each other, and shares the same belief: real fitness is built together.
                             </p>
                             <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3">
                                 {[
