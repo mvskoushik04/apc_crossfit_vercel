@@ -27,6 +27,7 @@ export default function HomePage() {
     const [isPlaying, setIsPlaying] = useState(false);
     const [isMuted, setIsMuted] = useState(true);
     const videoRef = useRef(null);
+
     return (
         <>
             {/* HERO */}
