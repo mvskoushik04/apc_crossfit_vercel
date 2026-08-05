@@ -171,9 +171,6 @@ export default function HomePage() {
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent" />
                                 <div className="absolute top-6 left-6">
-                                    <div className="px-4 py-1.5 bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full">
-                                        <span className="font-sans uppercase tracking-[0.3em] text-[9px] text-primary font-semibold">Program 01</span>
-                                    </div>
                                 </div>
                                 <div className="absolute bottom-6 left-6 right-6">
                                     <h3 className="font-display text-3xl sm:text-4xl text-foreground drop-shadow-lg">General Fitness</h3>
@@ -224,9 +221,6 @@ export default function HomePage() {
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent" />
                                 <div className="absolute top-6 left-6">
-                                    <div className="px-4 py-1.5 bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full">
-                                        <span className="font-sans uppercase tracking-[0.3em] text-[9px] text-primary font-semibold">Program 02</span>
-                                    </div>
                                 </div>
                                 <div className="absolute bottom-6 left-6 right-6">
                                     <h3 className="font-display text-3xl sm:text-4xl text-foreground drop-shadow-lg">Cricket Strength & Conditioning</h3>
@@ -278,9 +272,6 @@ export default function HomePage() {
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent" />
                                 <div className="absolute top-6 left-6">
-                                    <div className="px-4 py-1.5 bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full">
-                                        <span className="font-sans uppercase tracking-[0.3em] text-[9px] text-primary font-semibold">Program 03</span>
-                                    </div>
                                 </div>
                                 <div className="absolute bottom-6 left-6 right-6">
                                     <h3 className="font-display text-3xl sm:text-4xl text-foreground drop-shadow-lg">Sports Performance</h3>
