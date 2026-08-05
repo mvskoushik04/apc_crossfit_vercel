@@ -111,7 +111,6 @@ export default function HomePage() {
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
                             </div>
-                            <div className="absolute -bottom-6 -right-6 hidden md:block h-32 w-32 border-2 border-primary/40 rounded-lg" />
                         </div>
                         <div>
                             <Eyebrow>Our Journey</Eyebrow>
