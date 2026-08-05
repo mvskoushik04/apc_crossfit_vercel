@@ -360,7 +360,7 @@ export default function HomePage() {
                             {
                                 name: "Nakshatra",
                                 achievement: "Selected - Guntur U-15 Girls Cricket",
-                                image: "/images/champions/nakshatra.jpg"
+                                image: "/images/champions/Nakshatra.jpeg"
                             },
                             {
                                 name: "Pranav",
@@ -370,7 +370,7 @@ export default function HomePage() {
                             {
                                 name: "Manideep",
                                 achievement: "C-Division & B-Division Cricket Leagues",
-                                image: "/images/champions/manideep.jpg"
+                                image: "/images/champions/Manideep.jpeg"
                             },
                             {
                                 name: "Nandini & Gayatri",
