@@ -187,17 +187,16 @@ export default function HomePage() {
                                 </p>
                                 
                                 <div className="mt-6 grid grid-cols-2 gap-2">
-                                    {[
-                                        "Diet Guidance",
-                                        "Crossfit",
+                                    {[ 
+                                        "Health Performance",
                                         "Strength",
                                         "Cardio",
-                                        "Muscle Building",
                                         "Weight Loss",
                                         "Weight Gain",
                                         "Fat Loss",
-                                        "Recovery Measures",
+                                        "CrossFit",
                                         "High Intensity Interval Training",
+                                        "Diet Guidance",
                                         "In-person Workout Guidance"
                                     ].map((item) => (
                                         <div key={item} className="flex items-center gap-2">
@@ -247,7 +246,7 @@ export default function HomePage() {
                                         "Agility & Power",
                                         "Enhance Batting Performance ",
                                         "Enhance Bowling Performance",
-                                        "Reduced Injury Risk",
+                                        "Injury Prevention",
                                         "Improve Resilience",
                                         "Ground Fitness",
                                         "High Performance",
