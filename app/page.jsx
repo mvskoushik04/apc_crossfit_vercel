@@ -104,10 +104,10 @@ export default function HomePage() {
                             <div className="relative rounded-lg overflow-hidden aspect-[4/5] shadow-elevated">
                                 <video 
                                     src="/videos/our-journey.mp4" 
-                                    autoPlay 
-                                    muted 
-                                    loop 
+                                    autoPlay
+                                    muted
                                     playsInline
+                                    controls
                                     className="w-full h-full object-cover"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
