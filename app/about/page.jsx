@@ -29,7 +29,7 @@ export default function AboutPage() {
                             The <span className="italic text-gold-gradient">APC</span> Standard.
                         </h1>
                         <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed font-light">
-                            A gym born from championship discipline. Built for men, women and the youngest champions of Gajularamaram.
+                            A gym born from Championship discipline. Built for Men, Women and the Youngest Champions.
                         </p>
                     </div>
                 </div>
@@ -48,17 +48,17 @@ export default function AboutPage() {
                                 To establish <span className="italic text-gold-gradient">APC CrossFit</span>
                             </h2>
                             <p className="mt-4 text-lg text-muted-foreground font-light italic">
-                                "The grind, the grit and the commitment behind building a healthy and competitive community."
+                                "The Grind, The Grit and The Commitment behind building a Healthy and Competitive Community."
                             </p>
                             <div className="mt-8 space-y-4 text-muted-foreground leading-relaxed font-light text-base sm:text-lg">
                                 <p>
-                                    I used to travel <span className="italic text-primary">4 hours and 60 kilometres every single day</span> to prepare myself for chasing my dream of becoming an athlete at the highest level. Those long commutes taught me discipline, resilience, and what it truly takes to compete.
+                                    I used to travel <span className="italic text-primary">4 hours and 60 kilometres every single day</span> to prepare myself for chasing my dream of becoming an Athlete at the Highest Level. Those long commutes taught me Discipline, Resilience, and what it truly takes to compete.
                                 </p>
                                 <p>
-                                    Over the years, I gained deep knowledge about <span className="italic text-primary">fitness, athletic strength, and cricket</span>. But more than the sport itself, I developed a passion for sharing what I learned with others.
+                                    Over the years, I gained deep knowledge about <span className="italic text-primary">Fitness, Athletic Strength, and Cricket</span>. But more than the Sport itself, I developed a passion for sharing what I learned with others.
                                 </p>
                                 <p>
-                                    That's what drove me to establish APC CrossFit — to build a community that is <span className="italic text-primary">competitive, fitter, and healthier</span>. A place where every member gets the same dedication and coaching that I once pursued for myself.
+                                    That's what drove me to establish APC CrossFit — to build a Community that is <span className="italic text-primary">Competitive, Fit, and Healthier</span>. A place where every Member gets the same Dedication and Coaching that I once pursued for myself.
                                 </p>
                             </div>
                             <div className="mt-6 text-right">
@@ -73,7 +73,7 @@ export default function AboutPage() {
                             </div>
                             <div className="absolute -bottom-8 -left-4 sm:left-8 bg-card/95 backdrop-blur-xl border border-primary/30 rounded-lg p-6 shadow-elevated max-w-xs">
                                 <div className="font-sans uppercase tracking-[0.3em] text-[10px] text-primary font-semibold">Opened</div>
-                                <div className="font-display text-3xl text-foreground mt-2">January 6th 2026</div>
+                                <div className="font-display text-3xl text-foreground mt-2">January 26th 2026</div>
                             </div>
                         </div>
                     </div>
@@ -86,16 +86,16 @@ export default function AboutPage() {
                     <div className="text-center max-w-4xl mx-auto mb-14">
                         <span className="font-sans uppercase tracking-[0.4em] text-[11px] text-primary font-semibold">Leadership &amp; Mentors</span>
                         <h2 className="mt-5 font-display text-3xl sm:text-4xl lg:text-[42px] leading-[1.1] text-foreground">
-                            Coached by <span className="italic text-gold-gradient">state-level cricket champions.</span>
+                            Coached by <span className="italic text-gold-gradient">State-Level Athletic Champions.</span>
                         </h2>
                         <p className="mt-6 text-lg text-muted-foreground leading-relaxed font-light">
-                            Our mentors have played, competed and won at the state level. That same championship mindset now powers every session at APC CrossFit.
+                            Our Mentors have Played, Competed and Won at the State Level. That same Championship mindset now Powers every session at APC CrossFit.
                         </p>
                     </div>
                     <div className="grid md:grid-cols-2 gap-6">
                         {[
-                            { name: "A Premchand", role: "State-Level Cricket Champion · Founder", bio: "A former state-level cricketer who brings the discipline of championship-grade training to every APC athlete. Passionate about building young talent and adult transformation alike.", image: "/images/mentor-1.jpg", stats: ["State Champion · Cricket", "Certified Coach", "10+ years mentoring"] },
-                            { name: "A Premcharan", role: "State-Level Cricket Champion · Co-Founder", bio: "A decorated state cricket veteran who now leads our cricket coaching and athletic development pathway — the same pathway that has produced our national-level athletes.", image: "/images/mentor-2.jpg", stats: ["Youth Athlete Mentor", "Muscle building Coach", "3+ years mentoring"] },
+                            { name: "A Premchand", role: "State-Level Athlete · Founder", bio: "A former state-level Athlete who brings the discipline of championship-grade training to every APC CrossFit Member. Passionate about building Young Talent and Sports-Performance alike.", image: "/images/mentor-1.jpg", stats: ["State Champion · Athlete", "Certified Coach", "10+ years mentoring"] },
+                            { name: "A Premcharan", role: "Health-Performance Lifestyle Coach · Co-Founder", bio: "A dedicated health and performance coach who brings deep practical knowledge in nutrition, personal training, and athletic development — guiding athletes and fitness seekers toward sustainable strength, balanced living, and a champion mindset.", image: "/images/mentor-2.jpg", stats: ["Nutritionist", "Personal Trainer", "3+ years mentoring"] },
                         ].map((m) => (
                             <div key={m.name} className="group relative rounded-lg overflow-hidden bg-card border border-border hover:border-primary/60 transition-smooth flex flex-col">
                                 <div className="relative aspect-[16/10] overflow-hidden">
@@ -131,8 +131,8 @@ export default function AboutPage() {
                     </div>
                     <div className="grid md:grid-cols-3 gap-5">
                         {[
-                            { icon: Compass, title: "Our Vision", text: "To build a competitive and fitter community — where every member discovers their strength, pushes their limits, and grows together." },
-                            { icon: Target, title: "Our Mission", text: "To deliver high-quality coaching in a supportive environment, helping every member — from age 6 to 60 — achieve goals they once thought out of reach." },
+                            { icon: Compass, title: "Our Vision", text: "To build a Competitive and Fit community — where every Member discovers their Strength, Pushes their Limits, and grows together." },
+                            { icon: Target, title: "Our Mission", text: "To deliver High-Quality Coaching in a Supportive Environment, helping every Member — from age 8 to 60 — achieve goals they once thought out of reach." },
                             { icon: Heart, title: "Our Values", text: "Discipline. Community. Excellence. Integrity. We do the work when no one is watching, and we celebrate every win, big or small." },
                         ].map((v) => {
                             const Ic = v.icon;
@@ -163,14 +163,14 @@ export default function AboutPage() {
                                 National laurels. <span className="italic text-gold-gradient">Young champions.</span>
                             </h2>
                             <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed font-light">
-                                A number of our members have won national-level honours — a testament to the standard of coaching, mentorship and community here at APC CrossFit. Where the perfect fit exists, we highlight it: young athletes above 6yrs, senior lifters, sport-specific competitors, and women reclaiming strength for the first time.
+                                A number of our Members have Won National-Level Honours — a testament to the standard of Coaching, Mentorship and Community here at APC CrossFit. Where the perfect fit exists, we highlight it: Young Athletes above 8yrs, Senior Lifters, Sport-Specific Competitors, and Women reclaiming Strength for the first time.
                             </p>
                             <ul className="mt-8 space-y-3">
                                 {[
-                                    "Multiple national-level athletes trained at APC CrossFit",
-                                    "Youth athletes (above 6yrs) mentored in cricket & athletics",
-                                    "A safe, empowering strength environment for women",
-                                    "Community of 100+ transformations in the first 180 days",
+                                    "Multiple National-Level Athletes Trained at APC CrossFit",
+                                    "Sub-Junior Kids (above 6yrs) mentored in Cricket & Athletics",
+                                    "A safe, Empowering Strength Environment for Women",
+                                    "Community of 100+ Members in the first 180 days",
                                 ].map((it) => (
                                     <li key={it} className="flex items-start gap-3">
                                         <Star size={16} className="text-primary shrink-0 mt-1" strokeWidth={1.8} />
