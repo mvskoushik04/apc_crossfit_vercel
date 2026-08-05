@@ -6,7 +6,7 @@ import { PROGRAMS, FACILITIES, SITE } from "@/lib/data";
 export const metadata = {
     title: "APC Crossfit-Programs",
     description:
-        "Two signature programs at APC CrossFit Gajularamaram: General Fitness and Sports Performance Training.",
+        "Three signature programs at APC CrossFit Gajularamaram: General Fitness, Sports Performance Training and Cricket Strength & Conditioning",
     alternates: { canonical: `${SITE.url}/programs` },
 };
 
@@ -26,10 +26,10 @@ export default function ProgramsPage() {
                             <span className="font-sans uppercase tracking-[0.4em] text-[11px] text-primary font-semibold">Programs</span>
                         </div>
                         <h1 className="font-display text-3xl sm:text-4xl lg:text-[44px] leading-[1.1] text-foreground">
-                            Two Paths. <span className="italic text-gold-gradient">One goal.</span>
+                            Three Paths. <span className="italic text-gold-gradient">One goal.</span>
                         </h1>
                         <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed font-light">
-                            Whether you are chasing your first pull-up, your first medal, or your first 6-pack &mdash; we have built a program that meets you where you are.
+                            Whether you are chasing your First Pull-up, your First Medal, or your first 6-pack &mdash; we have built a program that meets you where you are.
                         </p>
                     </div>
                 </div>
@@ -102,9 +102,9 @@ export default function ProgramsPage() {
                     </div>
                     <div className="grid md:grid-cols-3 gap-5">
                         {[
-                            { title: "Men", text: "From Weight Loss to competitive strength &mdash; personalised pathways for every stage.", image: "/images/group-men.jpg" },
-                            { title: "Women", text: "A safe, empowering strength environment. Ladies-first coaching wherever preferred.", image: "/images/group-women.jpg" },
-                            { title: "Youth (above 6 Yrs)", text: "Age-appropriate cricket, athletic and strength foundations &mdash; the champions of tomorrow.", image: "/images/group-youth.jpg" },
+                            { title: "Men", text: "From Weight Loss to Competitive Strength &mdash; Personalised Pathways for every Stage.", image: "/images/group-men.jpg" },
+                            { title: "Women", text: "A Safe, Empowering Strength Environment. Ladies-First coaching wherever preferred.", image: "/images/group-women.jpg" },
+                            { title: "Youth (above 8 Yrs)", text: "Age-appropriate Cricket, Athletic and Strength Foundations &mdash; the Champions of Tomorrow.", image: "/images/group-youth.jpg" },
                         ].map((g) => (
                             <div key={g.title} className="group relative rounded-lg overflow-hidden bg-card border border-border hover:border-primary/60 transition-smooth">
                                 <div className="relative aspect-[4/5] overflow-hidden">
