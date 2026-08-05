@@ -102,7 +102,14 @@ export default function HomePage() {
                     <div className="grid lg:grid-cols-2 gap-14 items-center">
                         <div className="relative">
                             <div className="relative rounded-lg overflow-hidden aspect-[4/5] shadow-elevated">
-                                <Image src={HERO_IMAGES[1]} alt="APC CrossFit training floor" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+                                <video 
+                                    src="/videos/our-journey.mp4" 
+                                    autoPlay 
+                                    muted 
+                                    loop 
+                                    playsInline
+                                    className="w-full h-full object-cover"
+                                />
                                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
                             </div>
                             <div className="absolute -bottom-6 -right-6 hidden md:block h-32 w-32 border-2 border-primary/40 rounded-lg" />
