@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import { ArrowRight, ChevronDown, Sparkles, Star, MapPin, Phone, Instagram, Trophy, Users, Award as AwardIcon, Play, Volume2, VolumeX } from "lucide-react";
-import InstagramEmbed from "@/components/InstagramEmbed";
 import FAQAccordion from "@/components/FAQAccordion";
 import { PROGRAMS, STATS, FAQS, INSTAGRAM_POSTS, SITE, HERO_IMAGES, CHAMPION_IMAGES } from "@/lib/data";
 import { useState, useRef } from "react";
