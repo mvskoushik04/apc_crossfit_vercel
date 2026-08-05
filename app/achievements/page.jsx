@@ -122,7 +122,9 @@ export default function AchievementsPage() {
                         We build <span className="italic text-primary">champions</span>."
                     </blockquote>
                     <p className="mt-6 text-muted-foreground font-sans text-sm tracking-[0.3em] uppercase">
-                        — A Premchand, APC CrossFit
+                        — A Premchand
+                        <br />
+                        APC CrossFit
                     </p>
                 </div>
             </section>
