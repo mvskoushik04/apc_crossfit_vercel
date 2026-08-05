@@ -31,7 +31,7 @@ export default function ContactPage() {
                             Ready to <span className="italic text-gold-gradient">begin?</span>
                         </h1>
                         <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed font-light">
-                            Fill the enquiry form, ping us on WhatsApp, or drop in. Your first class is on us &mdash; no strings, no pressure.
+                            Call us, ping us on WhatsApp, or fill the enquiry form. Let's discuss your fitness goals and find the best path forward — together.
                         </p>
                     </div>
                 </div>
