@@ -39,7 +39,6 @@ export default function ProgramsPage() {
             <section className="py-20">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-24">
                     {PROGRAMS.map((p, i) => {
-                        const Ic = programIcons[p.id] || Flame;
                         const reverse = i % 2 === 1;
                         return (
                             <div key={p.id} className={`grid lg:grid-cols-2 gap-10 lg:gap-14 items-center`}>
@@ -47,9 +46,6 @@ export default function ProgramsPage() {
                                     <div className="relative rounded-lg overflow-hidden aspect-[4/5] group shadow-elevated">
                                         <Image src={p.image} alt={p.title} fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover group-hover:scale-105 transition-smooth" />
                                         <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
-                                        <div className="absolute top-5 left-5 h-14 w-14 rounded bg-primary flex items-center justify-center shadow-gold">
-                                            <Ic size={24} className="text-primary-foreground" />
-                                        </div>
                                         <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between">
                                             <div className="flex items-center gap-2 px-3 py-1.5 rounded bg-background/70 backdrop-blur border border-border">
                                                 <Clock size={12} className="text-primary" />
