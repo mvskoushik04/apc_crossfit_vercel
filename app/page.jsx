@@ -104,7 +104,9 @@ export default function HomePage() {
                             <div className="relative rounded-lg overflow-hidden aspect-[4/5] shadow-elevated">
                                 <video 
                                     src="/videos/our-journey.mp4" 
-                                    autoPlay
+                                    autoPlay 
+                                    muted 
+                                    loop 
                                     playsInline
                                     className="w-full h-full object-cover"
                                 />
