@@ -106,7 +106,6 @@ export default function HomePage() {
                                     src="/videos/our-journey.mp4" 
                                     autoPlay 
                                     muted 
-                                    loop 
                                     playsInline
                                     className="w-full h-full object-cover"
                                 />
