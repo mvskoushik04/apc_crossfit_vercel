@@ -105,9 +105,7 @@ export default function HomePage() {
                                 <video 
                                     src="/videos/our-journey.mp4" 
                                     autoPlay
-                                    muted
                                     playsInline
-                                    controls
                                     className="w-full h-full object-cover"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
