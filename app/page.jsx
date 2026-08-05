@@ -355,7 +355,7 @@ export default function HomePage() {
                             {
                                 name: "Raja",
                                 achievement: "District Level Athletics & Cricket",
-                                image: "/images/champions/raja.jpg"
+                                image: "/images/champions/Raja.jpeg"
                             },
                             {
                                 name: "Nakshatra",
