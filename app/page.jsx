@@ -48,7 +48,7 @@ export default function HomePage() {
                         </h1>
 
                         <p className="text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed font-light">
-                            APC CrossFit is the finest strength &amp; conditioning facility in Gajularamaram &mdash; home of national-level athletes, coached by state-champion mentors. Built for men, women &amp; young champions.
+                            APC CrossFit is the finest strength &amp; conditioning facility in Gajularamaram &mdash; home of National-Level Athletes, coached by State-Champion mentors. Built for Men, Women &amp; Young Champions.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-2">
@@ -113,10 +113,10 @@ export default function HomePage() {
                                     10 years of experience. <span className="italic text-gold-gradient">200 days of making it count.</span>
                                 </h2>
                             <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed font-light">
-                                Before APC CrossFit existed, our mentor spent over a decade coaching athletes across Hyderabad — at cricket academies and competitive training centres. That experience shaped everything that went into building this gym.
+                                Before APC CrossFit existed, our mentor spent over a decade coaching athletes across Hyderabad — at cricket academies and competitive training centres. That experience shaped everything that went into building this Crossfit gym.
                             </p>
                             <p className="mt-4 text-base sm:text-lg text-muted-foreground leading-relaxed font-light">
-                                When we opened our doors in January 2026, we didn't just launch a gym. We created a space where 10 years of coaching knowledge could finally come together under one roof. In just 200 days, we've had 100+ members walk through those doors — each one becoming part of a community that trains hard, shows up for each other, and shares the same belief: real fitness is built together.
+                                When we opened our CrossFit gym on January 26th 2026, we didn't just launch a crossfit gym. We created a space where 10 years of coaching knowledge could finally come together under one roof. In just 200 days, we've had 100+ members walk through those doors — each one becoming part of a community that trains hard, shows up for each other, and shares the same belief: real fitness is built together.
                             </p>
                             <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3">
                                 {[
@@ -146,14 +146,14 @@ export default function HomePage() {
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <Eyebrow center>Our Programs</Eyebrow>
                         <h2 className="font-display text-3xl sm:text-4xl lg:text-[42px] leading-[1.1] text-foreground">
-                            Two paths. <span className="italic text-gold-gradient">One mission.</span>
+                            Three paths. <span className="italic text-gold-gradient">One mission.</span>
                         </h2>
                         <p className="mt-6 text-lg text-muted-foreground leading-relaxed font-light">
                             Whether you're starting your fitness journey or chasing elite performance — we have a program built for you.
                         </p>
                     </div>
             
-                    <div className="grid md:grid-cols-2 gap-8">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* General Fitness */}
                         <div className="group relative bg-card border border-border hover:border-primary/60 rounded-2xl overflow-hidden transition-smooth shadow-elevated hover:shadow-gold">
                             <div className="relative aspect-[16/10] overflow-hidden">
@@ -161,7 +161,7 @@ export default function HomePage() {
                                     src="/images/program-general-fitness.jpg" 
                                     alt="General Fitness Program" 
                                     fill 
-                                    sizes="(max-width: 768px) 100vw, 50vw" 
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" 
                                     className="object-cover group-hover:scale-105 transition-smooth duration-500"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent" />
@@ -185,17 +185,69 @@ export default function HomePage() {
                                     {[
                                         "Diet Guidance",
                                         "Crossfit",
-                                        "Strength Development",
+                                        "Strength",
                                         "Cardio",
                                         "Muscle Building",
                                         "Weight Loss",
                                         "Weight Gain",
                                         "Fat Loss",
-                                        "Hyrox",
-                                        "Plyometrics",
-                                        "Endurance",
+                                        "Recovery Measures",
                                         "High Intensity Interval Training",
                                         "In-person Workout Guidance"
+                                    ].map((item) => (
+                                        <div key={item} className="flex items-center gap-2">
+                                            <div className="h-1.5 w-1.5 rounded-full bg-primary/60 flex-shrink-0" />
+                                            <span className="text-xs text-foreground/80 font-light">{item}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                                
+                                <Link href="/contact" className="inline-flex items-center gap-2 mt-8 text-primary hover:text-primary-glow font-sans uppercase tracking-[0.3em] text-xs group">
+                                    Get Started <ArrowRight size={14} className="group-hover:translate-x-1 transition-smooth" />
+                                </Link>
+                            </div>
+                        </div>
+            
+                        {/* Cricket Strength & Conditioning */}
+                        <div className="group relative bg-card border border-border hover:border-primary/60 rounded-2xl overflow-hidden transition-smooth shadow-elevated hover:shadow-gold">
+                            <div className="relative aspect-[16/10] overflow-hidden">
+                                <Image 
+                                    src="/images/program-cricket.jpg" 
+                                    alt="Cricket Strength & Conditioning Program" 
+                                    fill 
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" 
+                                    className="object-cover group-hover:scale-105 transition-smooth duration-500"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent" />
+                                <div className="absolute top-6 left-6">
+                                    <div className="px-4 py-1.5 bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full">
+                                        <span className="font-sans uppercase tracking-[0.3em] text-[9px] text-primary font-semibold">Program 02</span>
+                                    </div>
+                                </div>
+                                <div className="absolute bottom-6 left-6 right-6">
+                                    <h3 className="font-display text-3xl sm:text-4xl text-foreground drop-shadow-lg">Cricket Strength & Conditioning</h3>
+                                    <p className="text-sm text-muted-foreground/90 mt-2 font-light">We don't just train cricketers. We build match-winners.</p>
+                                </div>
+                            </div>
+                            
+                            <div className="p-8">
+                                <p className="text-muted-foreground leading-relaxed font-light">
+                                    Sport-specific training designed for cricketers — from power-hitting to bowling speed, agility in the field, and match-day endurance.
+                                </p>
+                                
+                                <div className="mt-6 grid grid-cols-2 gap-2">
+                                    {[
+                                        "Cricket Specific Strength",
+                                        "Improved Speed",
+                                        "Agility & Power",
+                                        "Enhance Batting Performance ",
+                                        "Enhance Bowling Performance",
+                                        "Reduced Injury Risk",
+                                        "Improve Resilience",
+                                        "Ground Fitness",
+                                        "High Performance",
+                                        "Recovery Protocols",
+                                        "In-Person Coaching"
                                     ].map((item) => (
                                         <div key={item} className="flex items-center gap-2">
                                             <div className="h-1.5 w-1.5 rounded-full bg-primary/60 flex-shrink-0" />
@@ -217,13 +269,13 @@ export default function HomePage() {
                                     src="/images/program-sports-performance.jpg" 
                                     alt="Sports Performance Program" 
                                     fill 
-                                    sizes="(max-width: 768px) 100vw, 50vw" 
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" 
                                     className="object-cover group-hover:scale-105 transition-smooth duration-500"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent" />
                                 <div className="absolute top-6 left-6">
                                     <div className="px-4 py-1.5 bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full">
-                                        <span className="font-sans uppercase tracking-[0.3em] text-[9px] text-primary font-semibold">Program 02</span>
+                                        <span className="font-sans uppercase tracking-[0.3em] text-[9px] text-primary font-semibold">Program 03</span>
                                     </div>
                                 </div>
                                 <div className="absolute bottom-6 left-6 right-6">
@@ -239,21 +291,19 @@ export default function HomePage() {
                                 
                                 <div className="mt-6 grid grid-cols-2 gap-2">
                                     {[
-                                        "Diet Guidance",
-                                        "Crossfit",
-                                        "Cardio",
-                                        "Strength Development",
-                                        "Power Enhancement",
-                                        "Speed Training",
-                                        "Mobility Workouts",
+                                        "Strength",
+                                        "Conditioning",
+                                        "Speed and Agility",
+                                        "Power",
+                                        "Force Development",
+                                        "Mobility",
                                         "Flexibility",
-                                        "Hyrox",
-                                        "Plyometrics",
-                                        "Force Improvement",
-                                        "Muscle Bulking",
-                                        "Endurance",
+                                        "CrossFit",
                                         "High Intensity Interval Training",
-                                        "In-person Workout Guidance"
+                                        "Ground Fitness",
+                                        "Recovery Measures",
+                                        "Injury Prevention",
+                                        "High Performance"
                                     ].map((item) => (
                                         <div key={item} className="flex items-center gap-2">
                                             <div className="h-1.5 w-1.5 rounded-full bg-primary/60 flex-shrink-0" />
@@ -268,7 +318,7 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
-
+            
                     <div className="text-center mt-12">
                         <Link href="/contact" className="inline-flex items-center gap-2 border border-primary/40 hover:border-primary hover:bg-primary/10 font-sans uppercase tracking-[0.3em] text-xs px-6 h-11 rounded-md transition-smooth">
                             Contact us <ArrowRight size={14} />
@@ -284,10 +334,10 @@ export default function HomePage() {
                     <div className="text-center max-w-4xl mx-auto mb-14">
                         <Eyebrow center>Our Champions</Eyebrow>
                         <h2 className="font-display text-3xl sm:text-4xl lg:text-[42px] leading-[1.1] text-foreground">
-                            Home of <span className="italic text-gold-gradient">national-level</span> athletes and young <span className="italic text-gold-gradient">champions under&nbsp;15.</span>
+                            Home of <span className="italic text-gold-gradient">National-level</span> Athletes and  <span className="italic text-gold-gradient">Young Champions.</span>
                         </h2>
                         <p className="mt-6 text-lg text-muted-foreground leading-relaxed font-light">
-                            We are incredibly proud of our students who have achieved remarkable success at the national, state, and district levels — a testament to the quality of coaching and community at APC CrossFit.
+                            We are incredibly proud of our members who have achieved remarkable success at the national, state, and district levels — a testament to the quality of coaching and community at APC CrossFit.
                         </p>
                     </div>
             
@@ -320,7 +370,7 @@ export default function HomePage() {
                             },
                             {
                                 name: "Nandini & Gayatri",
-                                achievement: "State Level Running - Podium Contenders",
+                                achievement: "SGF Running - Podium Contenders",
                                 image: "/images/champions/nandini-gayatri.jpg"
                             },
                         ].map((champion, index) => (
