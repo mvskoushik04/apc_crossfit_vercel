@@ -392,12 +392,6 @@ export default function HomePage() {
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
                                     
-                                    {/* Badge */}
-                                    <div className="absolute top-4 left-4">
-                                        <div className="px-3 py-1 bg-primary/90 backdrop-blur-sm rounded-full">
-                                            <span className="font-sans uppercase tracking-[0.3em] text-[8px] text-primary-foreground font-semibold">Champion</span>
-                                        </div>
-                                    </div>
                                     
                                     {/* Name and Achievement - Overlay on image */}
                                     <div className="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-background via-background/80 to-transparent">
