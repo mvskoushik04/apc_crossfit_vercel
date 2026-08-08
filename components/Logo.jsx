@@ -26,10 +26,10 @@ export default function Logo({ size = "md" }) {
             />
             <div className="flex flex-col">
                 <span className={`font-display font-semibold text-foreground leading-tight ${textSizes[size]}`}>
-                    APC CrossFit
+                    APC CROSSFIT
                 </span>
                 <span className="text-[10px] text-muted-foreground font-sans uppercase tracking-[0.3em]">
-                    Gajularamaram, Hyderabad
+                    GAJULARAMARAM, HYDERABAD
                 </span>
             </div>
         </Link>
