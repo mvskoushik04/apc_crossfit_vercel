@@ -98,9 +98,9 @@ export default function ProgramsPage() {
                     </div>
                     <div className="grid md:grid-cols-3 gap-5">
                         {[
-                            { title: "Men", text: "From Weight Loss to Competitive Strength &mdash; Personalised Pathways for every Stage.", image: "/images/group-men.jpg" },
-                            { title: "Women", text: "A Safe, Empowering Strength Environment. Ladies-First coaching wherever preferred.", image: "/images/group-women.jpg" },
-                            { title: "Youth (above 8 Yrs)", text: "Age-appropriate Cricket, Athletic and Strength Foundations &mdash; the Champions of Tomorrow.", image: "/images/group-youth.jpg" },
+                            { title: "Men", text: "From Weight Loss to Competitive Strength &mdash; Personalised Pathways for every Stage.", image: "/images/Men.jpeg" },
+                            { title: "Women", text: "A Safe, Empowering Strength Environment. Ladies-First coaching wherever preferred.", image: "/images/Women.jpeg" },
+                            { title: "Youth (above 8 Yrs)", text: "Age-appropriate Cricket, Athletic and Strength Foundations &mdash; the Champions of Tomorrow.", image: "/images/Kids.png" },
                         ].map((g) => (
                             <div key={g.title} className="group relative rounded-lg overflow-hidden bg-card border border-border hover:border-primary/60 transition-smooth">
                                 <div className="relative aspect-[4/5] overflow-hidden">
