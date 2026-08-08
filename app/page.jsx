@@ -101,12 +101,13 @@ export default function HomePage() {
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-14 items-center">
                         <div className="relative">
-                            <div className="relative rounded-lg overflow-hidden aspect-[4/5] shadow-elevated">
+                            <div className="relative rounded-lg overflow-hidden aspect-video shadow-elevated">
                                 <video 
                                     src="/videos/our-journey.mp4" 
                                     autoPlay 
                                     muted 
                                     playsInline
+                                    poster="/images/journey-poster.jpg"
                                     className="w-full h-full object-cover"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
