@@ -355,9 +355,9 @@ export default function HomePage() {
                                 image: "/images/champions/Nakshatra.jpeg"
                             },
                             {
-                                name: "Pranav",
+                                name: "Pranavh",
                                 achievement: "Selected - U-14 Cricket Team USA",
-                                image: "/images/champions/pranav.jpg"
+                                image: "/images/champions/Pranavh.jpeg"
                             },
                             {
                                 name: "Manideep",
