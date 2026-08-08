@@ -164,7 +164,7 @@ export default function HomePage() {
                         <div className="group relative bg-card border border-border hover:border-primary/60 rounded-2xl overflow-hidden transition-smooth shadow-elevated hover:shadow-gold">
                             <div className="relative aspect-[16/10] overflow-hidden">
                                 <Image 
-                                    src="/images/program-general-fitness.jpg" 
+                                    src="/images/General Fitness.jpeg" 
                                     alt="General Fitness Program" 
                                     fill 
                                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" 
