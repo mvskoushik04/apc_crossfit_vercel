@@ -11,7 +11,7 @@ export default function Logo({ size = "md" }) {
     return (
         <Link href="/" className="flex items-center">
             <Image 
-                src="/images/logo.png" 
+                src="/images/APC_Logo.png" 
                 alt="APC CrossFit" 
                 width={120} 
                 height={40} 
