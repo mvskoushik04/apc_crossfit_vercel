@@ -9,11 +9,10 @@ import { GALLERY_IMAGES, INSTAGRAM_GALLERY, INSTAGRAM_POSTS, SITE } from "@/lib/
 export default function GalleryPage() {
     const [tab, setTab] = useState("photos");
     const [lightbox, setLightbox] = useState(null);
-    const allInstagram = [...INSTAGRAM_POSTS, ...INSTAGRAM_GALLERY];
+    const allInstagram = [...INSTAGRAM_POSTS, ...INSTAGRAM_GALLERY].slice(0, 6);
 
     return (
         <>
-            {/* HERO */}
             <section className="relative pt-32 pb-16 overflow-hidden border-b border-border">
                 <div className="absolute inset-0 grid-lines opacity-30" />
                 <div className="absolute top-10 -right-20 w-80 h-80 rounded-full bg-primary/10 blur-3xl" />
@@ -33,7 +32,6 @@ export default function GalleryPage() {
                 </div>
             </section>
 
-            {/* TABS */}
             <section className="py-16">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="inline-flex bg-card border border-border p-1 rounded-md mb-10" role="tablist">
