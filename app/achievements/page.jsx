@@ -80,7 +80,7 @@ export default function AchievementsPage() {
                                 key={achievement.id} 
                                 className="group relative bg-card border border-border rounded-lg overflow-hidden hover:border-primary/60 transition-smooth shadow-elevated hover:shadow-gold"
                             >
-                                <div className="relative aspect-[4/3] overflow-hidden">
+                                <div className="relative aspect-[3/4] overflow-hidden">
                                     <Image 
                                         src={achievement.image} 
                                         alt={achievement.title} 
@@ -95,12 +95,6 @@ export default function AchievementsPage() {
                                     <div className="absolute bottom-4 left-4 right-4">
                                         <h3 className="font-display text-xl text-white drop-shadow-lg">{achievement.title}</h3>
                                     </div>
-                                </div>
-                                <div className="p-6">
-                                    <p className="text-muted-foreground leading-relaxed font-light text-sm">
-                                        {achievement.description}
-                                    </p>
-                                    
                                 </div>
                             </div>
                         ))}
