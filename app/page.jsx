@@ -340,11 +340,6 @@ export default function HomePage() {
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {[
                             {
-                                name: "Sai Teja",
-                                achievement: "National Level Skating Champion",
-                                image: "/images/champions/sai-teja.jpg"
-                            },
-                            {
                                 name: "Raja",
                                 achievement: "District Level Athletics & Cricket",
                                 image: "/images/champions/Raja.jpeg"
@@ -363,11 +358,6 @@ export default function HomePage() {
                                 name: "Manideep",
                                 achievement: "C-Division & B-Division Cricket Leagues",
                                 image: "/images/champions/Manideep.jpeg"
-                            },
-                            {
-                                name: "Nandini & Gayatri",
-                                achievement: "SGF Running - Podium Contenders",
-                                image: "/images/champions/nandini-gayatri.jpg"
                             },
                         ].map((champion, index) => (
                             <div 
