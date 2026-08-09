@@ -340,6 +340,11 @@ export default function HomePage() {
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {[
                             {
+                                name: "Sai Teja",
+                                achievement: "B. Sai Teja Secures First Place at the 1st International Roller Handball Skating Championship 2026",
+                                image: "/images/champions/Sai-Teja.jpeg"
+                            },
+                            {
                                 name: "Raja",
                                 achievement: "District Level Athletics & Cricket",
                                 image: "/images/champions/Raja.jpeg"
