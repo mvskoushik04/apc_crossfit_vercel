@@ -154,7 +154,7 @@ export default function AboutPage() {
                     <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                         <div className="relative order-2 lg:order-1">
                             <div className="relative rounded-lg overflow-hidden aspect-[4/3] shadow-elevated">
-                                <Image src="/images/trophies.jpg" alt="National level trophies won by APC CrossFit athletes" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+                                <Image src="/images/achievements/achievement-3.jpeg" alt="National level trophies won by APC CrossFit athletes" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
                             </div>
                         </div>
                         <div className="order-1 lg:order-2">
