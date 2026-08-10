@@ -68,7 +68,7 @@ export default function AboutPage() {
                         </div>
                         <div className="relative">
                             <div className="relative rounded-lg overflow-hidden aspect-[4/5] shadow-elevated">
-                                <Image src="/images/ribbon-cutting.jpg" alt="APC CrossFit ribbon cutting by local MLA" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+                                <Image src="/images/gym_opening.jpg" alt="APC CrossFit ribbon cutting by local MLA" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
                             </div>
                             <div className="absolute -bottom-8 -left-4 sm:left-8 bg-card/95 backdrop-blur-xl border border-primary/30 rounded-lg p-6 shadow-elevated max-w-xs">
