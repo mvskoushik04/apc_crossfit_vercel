@@ -76,21 +76,20 @@ export default function AchievementsPage() {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {ACHIEVEMENTS.map((achievement) => (
-                                <div className="relative aspect-[3/4] overflow-hidden">
-                                    <Image 
-                                        src={achievement.image} 
-                                        alt={achievement.title} 
-                                        fill 
-                                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" 
-                                        className="object-cover group-hover:scale-105 transition-smooth duration-500"
-                                    />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
-                                    <div className="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm px-3 py-1 rounded-full">
-                                        <span className="font-sans uppercase tracking-[0.3em] text-[9px] text-primary-foreground font-semibold">Achievement {String(achievement.id).padStart(2, '0')}</span>
-                                    </div>
-                                    <div className="absolute bottom-4 left-4 right-4">
-                                        <h3 className="font-display text-xl text-white drop-shadow-lg">{achievement.title}</h3>
-                                    </div>
+                            <div key={achievement.id} className="relative aspect-[3/4] overflow-hidden group">
+                                <Image 
+                                    src={achievement.image} 
+                                    alt={achievement.title} 
+                                    fill 
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" 
+                                    className="object-cover group-hover:scale-105 transition-smooth duration-500"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
+                                <div className="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm px-3 py-1 rounded-full">
+                                    <span className="font-sans uppercase tracking-[0.3em] text-[9px] text-primary-foreground font-semibold">Achievement {String(achievement.id).padStart(2, '0')}</span>
+                                </div>
+                                <div className="absolute bottom-4 left-4 right-4">
+                                    <h3 className="font-display text-xl text-white drop-shadow-lg">{achievement.title}</h3>
                                 </div>
                             </div>
                         ))}
@@ -118,7 +117,6 @@ export default function AchievementsPage() {
                     </p>
                 </div>
             </section>
-
         </>
     );
 }
