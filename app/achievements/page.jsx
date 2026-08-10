@@ -76,10 +76,6 @@ export default function AchievementsPage() {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {ACHIEVEMENTS.map((achievement) => (
-                            <div 
-                                key={achievement.id} 
-                                className="group relative bg-card border border-border rounded-lg overflow-hidden hover:border-primary/60 transition-smooth shadow-elevated hover:shadow-gold"
-                            >
                                 <div className="relative aspect-[3/4] overflow-hidden">
                                     <Image 
                                         src={achievement.image} 
